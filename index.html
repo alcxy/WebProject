@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TIKU 検索</title>
+<style type="text/css">
+	input{width:25%;}
+	tr{height:35px;margin-bottom:2px;}
+	td{font-size:11px;}
+	th{text-align:left;}
+</style>
+<script type="text/javascript">
+
+function onload() {
+	
+}
+	function onkeyupup() {
+		var value = document.getElementById("keyword").value;
+		var elements = document.getElementsByTagName('tr');
+
+		value = value.toUpperCase();
+		
+		for (var i = 0; i < elements.length; i++) {
+			var trel = elements[i].children[0].innerHTML;
+			var trel2 = elements[i].children[1].innerHTML;
+			if (trel.indexOf(value) >= 0) {
+				elements[i].style.display = "block";
+			} 
+			else if (trel2.indexOf(value) >= 0) {
+				elements[i].style.display = "block";
+			}
+			else {
+				elements[i].style.display = "none";
+			}
+		}
+	}
+</script>
+</head>
+<body onload="onload();">
+<h3>検索</h3>
+<input type="text" id = "keyword" onchange="onkeyupup();"/>
+<input type="button" value="检索" onclientclick="onkeyupup();"/>
+<table>
+	<tr>
+		<th width="60px">结果</th>
+		<th>问题 / 选项</th>
+	</tr>
+<tr><td nowrap>D</td><td nowrap>哪一个标记用于使HTML文档中表格里的单元格在同行进行合并?<br>A.cellspacing|B.cellpadding|C.rowspan|D.colspan</td></tr>
+<tr><td nowrap>D</td><td nowrap>使用以下那一种元素可以将声音添加到网页里面?<br>A.sound|B.bgsound|C.music|D.voice</td></tr>
+<tr><td nowrap>AB</td><td nowrap>以下HTML代码中，哪一个是将词语“Run Away Bride”显示为Verdana字体并且字号为5号的正确代码?<br>A.&lt;font size=“5”font=“Verdana”&gt;RunAway Bride&lt;/font&gt;|B.&lt;font size=“5”face=“Verdana”&gt;RunAway Bride&lt;/font&gt;|C.&lt;font size=5font=Verdana&gt;“Run Away Bride”&lt;/font&gt;|D.&lt;font size=5 face=“Verdana”,text=“RunAway Bride”&lt;/font&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>在&lt;param&gt;标签中，下列哪个属性用于给参数传递内容?<br>A.Address|B.Value|C.Amount|D.Method</td></tr>
+<tr><td nowrap>C</td><td nowrap>一个文件夹名称叫Parent，其下有一个叫做test.asp的文件，和一个名为Child的文件夹。Child下有一个名为default.htm文件，想在default.htm中作一个连接，链到test.asp。以下正确的是：<br>A.&lt;a href=“/test.asp”&gt;…&lt;/a&gt;|B.&lt;a href=“c:/test.asp”&gt;…&lt;/a&gt;|C.&lt;a href=“‥/test.asp”&gt;…&lt;/a&gt;|D.&lt;a href=“Parent/test.asp”&gt;…&lt;/a&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列那项技术可以用于帮助网页设计时使页面具有统一、专业的外观?<br>A.HTML|B.DHTML|C.CSS|D.URL</td></tr>
+<tr><td nowrap>A</td><td nowrap>Window对象是代表InternetExplorer窗口的对象，其属性、方法和事件可以不经限定就可以直接使用。比如Window.Alert“stop”也可以直接写成：Alert“stop”这种说法是正确的还是错误的?<br>A.正确|B.错误</td></tr>
+<tr><td nowrap>C</td><td nowrap>在页面中看不见的表单元素是那种?<br>A.&lt;inputtype=&quot;password&quot;&gt;&lt;/input&gt;|B.&lt;inputtype=&quot;radio&quot;&gt;&lt;/input&gt;|C.&lt;inputtype=&quot;hidden&quot;&gt;&lt;/input&gt;|D.&lt;inputtype=&quot;reset&quot;&gt;&lt;/input&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下哪一个项目是用来访问web页的软件?<br>A.OutlookExpress|B.Internet Explorer|C.QQ|D.FTP</td></tr>
+<tr><td nowrap>B</td><td nowrap>哪条命令用于使一行文本折行，而不是插入一个新的段落?<br>A.&lt;TD&gt;|B.&lt;BR&gt;|C.&lt;P&gt;|D.&lt;H1&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>世界上最大的计算机网络是：<br>A.WWW|B.WAN|C.MAN|D.Internet</td></tr>
+<tr><td nowrap>D</td><td nowrap>语句A：HTML文档必须包括“头”和“主体”两部分\r\n语句B：HTML文档的扩展名为.htm或.html以下说法正确的是：<br>A.两句都对|B.两句都错|C.只有A对|D.只有B对</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下哪个项目不是可以在HTML文档中使用的特殊字符。<br>A.&gt;|B.&tl;|C.&copy;|D.&nbsp;</td></tr>
+<tr><td nowrap>C</td><td nowrap>Html标记中，哪个标记表示表格?<br>A.&lt;H1&gt;|B.&lt;TD&gt;|C.&lt;TABLE&gt;|D.&lt;TAB&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>Html标记中，用什么方法可以将整个表格在页面中居中?<br>A.place=middle|B.type=middle|C.align=center|D.type=center</td></tr>
+<tr><td nowrap>A</td><td nowrap>我们想要让当前页面的背景色为蓝色，应该使用哪一句代码来描述此种设置?<br>A.bgcolor=&quot;blue&quot;|B.bgground=&quot;blue&quot;|C.backcolor=&quot;blue&quot;|D.background=&quot;blue&quot;</td></tr>
+<tr><td nowrap>C</td><td nowrap>我们想要让表格的边框在页面中一定不显示出来，用什么方法可以做到呢?<br>A.bgcolor=&quot;white&quot;|B.bgcolor=&quot;null&quot;|C.border=&quot;0&quot;|D.bordercolor=&quot;white&quot;</td></tr>
+<tr><td nowrap>A</td><td nowrap>我们想要将表格的宽度设置为100个像素，应该怎么办?<br>A.width=&quot;100&quot;|B.border=&quot;100&quot;|C.length=&quot;100&quot;|D.maxlength=&quot;100&quot;</td></tr>
+<tr><td nowrap>D</td><td nowrap>我们想要将表格中的文字放在靠上居中的位置，应该怎么办?<br>A.align=&quot;middle&quot;align=&quot;top&quot;|B.align=&quot;center&quot;align=&quot;top&quot;|C.valign=&quot;middle&quot;align=&quot;top&quot;|D.valign=&quot;top&quot; align=&quot;center&quot;</td></tr>
+<tr><td nowrap>C</td><td nowrap>我们想要为网页中的文字加上超链接，可以采用哪个标记达到要求?<br>A.&lt;LINK&gt;|B.&lt;HREF&gt;|C.&lt;A&gt;|D.&lt;B&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>A文件夹与B文件夹是同级文件夹，其中A下有a.htm，B下有b.htm文件，现在我们希望在a.htm文件中创建超链接，链接到b.htm，应该在a.htm页面代码中如何描述链接内容?<br>A.b.htm|B.././././B./b.htm|C.../B/b.htm|D.../../b.htm</td></tr>
+<tr><td nowrap>C</td><td nowrap>我们想要在HTML文档中加入图像，可以使用哪个标记来达到要求呢?<br>A.&lt;PIC&gt;|B.&lt;PICTURE&gt;|C.&lt;IMG&gt;|D.&lt;IMAGE&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>我们发现为页面中的图像加入超链接后，默认情况下都带有一道黑框，有什么方法可以去掉它呢?<br>A.bordercolor=&quot;white&quot;|B.border=&quot;0&quot;|C.style=&quot;no border&quot;|D.style=&quot;0&quot;</td></tr>
+<tr><td nowrap>D</td><td nowrap>我们想要将表格中加入的图像充满整个单元格，使用哪种方式可以做到?<br>A.size=&quot;100&quot;|B.size=&quot;100%&quot;|C.width=&quot;100&quot;|D.width=&quot;100%&quot;</td></tr>
+<tr><td nowrap>C</td><td nowrap>我们想要在框架中加入一个叫做list.htm的文件，应该在HTML中如何描述它?<br>A.framepage=&quot;list.htm&quot;|B.frametarget=&quot;list.htm&quot;|C.framesrc=&quot;list.htm&quot;|D.frameframepage=&quot;list.htm&quot;</td></tr>
+<tr><td nowrap>B</td><td nowrap>我们想要在页面中加入一个层，可以使用哪些HTML标记来描述它?<br>A.&lt;floor&gt;|B.&lt;div&gt;|C.&lt;span&gt;|D.&lt;level&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>下面语句表述正确的是<br>A. marginwidth=5表示框架宽度部分边缘所保留的空间。|B.marginwidth=5表示框架宽度空间|C.noresize是设定不用使用框框的大小|D.noresize是使用者设定此参数后，可随意地拉动框架改变其大小。</td></tr>
+<tr><td nowrap>C</td><td nowrap>不是表单提供给用户的输入形式是<br>A.Text|B.Radio|C.Type|D.file</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪种CSS样式定义的方式拥有最高的优先级?<br>A. 嵌入|B. 行内|C. 链接|D. 导入</td></tr>
+<tr><td nowrap>B</td><td nowrap>web标准的制定者是?<br>A. 微软|B. 万维网联盟（W3C.|C. 网景公司（Netscape）|D. SUN公司</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列的HTML中哪个是最大的标题?<br>A. &lt;h6&gt;|B. &lt;head&gt;|C. &lt;heading&gt;|D. &lt;h1&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列的HTML中哪个可以插入一条水平线?<br>A. &lt;br&gt;|B. &lt;hr&gt;|C. &lt;break&gt;|D. &lt;P&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以添加背景颜色?<br>A. &lt;body color=&quot;yellow&quot;&gt;|B. &lt;background&gt;yellow&lt;/background&gt;|C. &lt;body bgcolor=&quot;yellow&quot;&gt;|D. &lt;body backcolor=&quot;yellow&quot;&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>请选择产生粗体字的HTML标签：<br>A. &lt;bold&gt;|B. &lt;bb&gt;|C. &lt;b&gt;|D. &lt;bld&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>请选择产生斜体字的HTML标签：<br>A. &lt;i&gt;|B. &lt;italics&gt;|C. &lt;ii&gt;|D. &lt;it&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以产生超链接?<br>A. &lt;aurl=&quot;http://www.w3schools.com&quot;&gt;W3Schools.com&lt;/a&gt;|B. &lt;a&gt;http://www.w3schools.com&lt;/a&gt;|C. &lt;a href=&quot;http://www.w3schools.com&quot;&gt;W3Schools&lt;/a&gt;|D. &lt;a&gt;http://www.w3schools.com&lt;/a&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>如何制作电子邮件链接?<br>A. &lt;a href=&quot;xxx@yyy&quot;&gt;|B. &lt;mail href=&quot;xxx@yyy&quot;&gt;|C. &lt;a href=&quot;mailto:xxx@yyy&quot;&gt;|D. &lt;mail&gt;xxx@yyy&lt;/mail&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>如何在新窗口打开链接?<br>A. &lt;a href=&quot;url&quot; new&gt;|B. &lt;a href=&quot;url&quot; target=&quot;_blank&quot;&gt;|C. &lt;a href=&quot;url&quot;target=&quot;new&quot;&gt;|D. &lt;a href=&quot;url&quot; target=&quot;_parent&quot;&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下选项中，哪个全部都是表格标签?<br>A. &lt;table&gt;&lt;head&gt;&lt;tfoot&gt;|B. &lt;table&gt;&lt;tr&gt;&lt;td&gt;|C. &lt;table&gt;&lt;tr&gt;&lt;tt&gt;|D. &lt;thead&gt;&lt;body&gt;&lt;tr&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>请选择可以使单元格中的内容进行左排列的正确HTML标签：<br>A. &lt;td align=&quot;left&quot;&gt;|B. &lt;td valign=&quot;left&quot;&gt;|C. &lt;td leftalign&gt;|D. &lt;tdleft&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>如何产生带有数字列表符号的列表?<br>A. &lt;ul&gt;|B. &lt;dl&gt;|C. &lt;ol&gt;|D. &lt;list&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>如何产生带有圆点列表符号的列表?<br>A. &lt;dl&gt;|B. &lt;list&gt;|C. &lt;ol&gt;|D. &lt;ul&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以产生复选框?<br>A. &lt;input type=&quot;check&quot;&gt;|B. &lt;checkbox&gt;|C. &lt;input type=&quot;checkbox&quot;&gt;|D. &lt;check&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以产生文本框?<br>A. &lt;input type=&quot;textfield&quot;&gt;|B. &lt;textinput type=&quot;text&quot;&gt;|C. &lt;input type=&quot;text&quot;&gt;|D. &lt;textfield&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列的HTML中哪个可以产生下拉列表?<br>A. &lt;list&gt;|B. &lt;input type=&quot;list&quot;&gt;|C. &lt;input type=&quot;dropdown&quot;&gt;|D. &lt;select&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列的HTML中哪个可以产生文本区?<br>A. &lt;textarea&gt;|B. &lt;input type=&quot;textarea&quot;&gt;|C. &lt;input type=&quot;textbox&quot;&gt;|D. &lt;textarea&gt;&lt;/textarea&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以插入图像?<br>A. &lt;img href=&quot;image.gif&gt;|B. &lt;image src=&quot;image.gif&quot;&gt;|C. &lt;img src=&quot;image.gif&quot;&gt;|D. &lt;img&gt;image.gif&lt;/img&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>下列的HTML中哪个可以插入背景图像?<br>A. &lt;body background=&quot;background.gif&quot;&gt;|B. &lt;backgroundimg=&quot;background.gif&quot;&gt;|C. &lt;img src=&quot;background.gif&quot;background&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>下列属性中表示文档中的未访问过的超链接的颜色是哪个（）<br>A. linkColor属性|B. vlinkColor属性|C. alinkColor属性|D. 以上都不是</td></tr>
+<tr><td nowrap>C</td><td nowrap>分析下面这段代码运行的结果（）\r\n&lt;scriptlanguage=”JavaScript”&gt;\r\nwith(document)\r\n{\r\nwriteln(“最后一次修改时间：” +document.lastModified+”&lt;br&gt;”);\r\nwriteln(“标题：” +document.title+”&lt;br&gt;”);\r\nwriteln(“URL：” +document.URL+”&lt;br&gt;”);\r\n}\r\n&lt;/script&gt;<br>A. 只输出最后一次修改的时间|B. 只输出文档的标题|C. 输出文档的标题、最后一次修改时间和当前的URL|D. 什么也不输出</td></tr>
+<tr><td nowrap>B</td><td nowrap>分析下面这个程序运行的结果（）\r\n&lt;script language=”JavaScript”&gt;\r\nvar str=”字符串”\r\nwith(document)\r\n{\r\nwriteln(“&lt;b&gt;您好，&lt;/b&gt;”);\r\nwrite(“欢迎光临本网页！” +”&lt;br&gt;”);\r\nwriteln(“&lt;p&gt;&lt;b&gt;在js标签之间，”);\r\nwriteln(str+”可以写在这里&lt;/b&gt;&lt;/p&gt;”);\r\n}\r\n&lt;/script&gt;<br>A. 会有”&lt;br&gt;”这样的字符输出|B. 第6行输出字符后会换行|C. 最后页面会出错|D. 会有乱码出现</td></tr>
+<tr><td nowrap>A</td><td nowrap>分析下面这两行代码的作用（）\r\n01 &lt;A href=”javascript:history.back()”&gt;&lt;/A&gt;\r\n02 &lt;A href=”javascript:history.forward()”&gt;&lt;/A&gt;<br>A.代码第1行的作用相当于后退按钮|B.代码第2行的作用相当于后退按钮|C.代码第1行的作用相当于前进按钮|D.以上表述不都不正确</td></tr>
+<tr><td nowrap>C</td><td nowrap>对下面这段代码分析不正确的是（）\r\nfuntcion Submit()\r\n{\r\nform1.submit();\r\nalert(“提交成功”)\r\n}\r\nfunctionReset()\r\n{\r\nform1.reset();\r\n}<br>A. 调用Submit()可以提交表单|B. 调用Reset()重置表单|C. 调用Reset()相当于提交按钮|D. 调用Submit()相当于提交按钮</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列对符号所表示的意义解释错误的是（）<br>A. ˆ(尖号)：匹配字符串的开头|B. $（美元符号）：匹配字符串的结尾|C. ?（问号）：匹配前面的子表达式一次或多次|D. \\（反斜杠）：对特殊字符的特殊元字符含义进行转义</td></tr>
+<tr><td nowrap>D</td><td nowrap>对下面这段代码分析不正确的是（）\r\nvar reg=/ .o./ g; //寻找字符o前后接任意字符组成的有三个字符的字符串\r\nvar str= “How are you?” //源串\r\nvar result=new Array(); //用于接收结果\r\nwhile(reg.exec(str)!=null) //执行匹配操作，如果找到匹配则继续找下一项\r\n{\r\nresult.push(RegExp.lastMatch); //添加结果\r\n}\r\nalert(result);<br>A. 代码第1行是寻找字符o前后接任意字符组成的有三个字符的字符串|B. 代码第4行是执行匹配操作，如果找到匹配则继续找下一项|C. 代码第6行是将所得到的结果添加到数组中|D. 最后输出的是“How are you?”</td></tr>
+<tr><td nowrap>C</td><td nowrap>以下( )表达式产生一个0~7之间(含0,7)的随机整数.<br>A.Math.floor(Math.random()*6)|B.Math.floor(Math.random()*7)|C.Math. floor(Math.random()*8)|D.Math.ceil(Math.random()*8)</td></tr>
+<tr><td nowrap>C</td><td nowrap>如果想在网页显示后,动态地改变网页的标题( )<br>A.是不可能的|B.通过document.write(“新的标题内容”)|C. 通过document.title=(“新的标题内容”)|D. 通过document.changeTitle(“新的标题内容”)</td></tr>
+<tr><td nowrap>B</td><td nowrap>某网页中有一个窗体对象,其名称是mainForm,该窗体对象的第一个元素是按钮,其名称是myButton,表述该按钮对象的方法是()<br>A.document.forms.myButton|B.document.mainForm.myButton|C.document.forms[0].element[0]|D.以上都可以</td></tr>
+<tr><td nowrap>A</td><td nowrap>HMTL表单的首要标记是&lt;form&gt;,&lt;form&gt;标记的参数method表示表单发送的方法，可能为get或post，下列关于get和post的描述正确的是（）<br>A.post方法传递的数据对客户端是不可见的|B.get请求信息以查询字符串的形式发送，查询字符串长度没有大小限制|C.post方法对发送数据的数量限制在255个字符之内|D.get方法传递的数据对客户端是不可见的</td></tr>
+<tr><td nowrap>B</td><td nowrap>编写JavaScript函数实现网页背景色选择器，下列选项中正确的是（）<br>A.functionchange(color){window.bgColor=color;}|B. function change(color){document.bgColor=color;}|C. functionchange(color){body.bgColor=color;}|D. functionchange(color){form.bgColor=color;}</td></tr>
+<tr><td nowrap>A</td><td nowrap>在Javascript中，可以使用Date对象的()方法返回一个月中的每一天。<br>A．getDate|B.getYear|C.getMonth|D.getTime</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列选项中关于浏览器对象的说法错误的是（）<br>A.history对象记录了用户在一个浏览器中已经访问过的URLs|B.location对象相当于IE浏览器中的地址栏，包含关于当前URL地址的信息|C.location对象是history对象的父对象|D.location对象是window对象的子对象</td></tr>
+<tr><td nowrap>C</td><td nowrap>分析下面的Javascript代码段，输出结果是（）\r\nvar mystring=”I am a student”;\r\nvar a=mystring.substring(9,13);\r\ndocument.write(a);<br>A．Stud|B.tuden|C.uden|D.udent</td></tr>
+<tr><td nowrap>AC</td><td nowrap>以下说法正确的是:<br>A.Microsoft公司的InternetExplorer是HTML文件浏览工具|B.Netscape公司的 Navigator即可以编辑又可以浏览HTML文件|C.Macromedia公司的Dreamweaver与Microsoft公司的FrontPage有类似的功能|D.记事本不能用于编辑Internet网页|E.HTML页面只能使用IE浏览器打开</td></tr>
+<tr><td nowrap>ACD</td><td nowrap>下面关于CSS表述正确的是<br>A. CSS是一种制作网页的新技术，现在已经为大多数的浏览器所支持，成为网页设计必不可少的工具之一。|B. 层叠样式表是HTML的辅助工具，缺点是设计者设计的网页缺少动感，网页内容的排版布局上也有很多困难|C. 使用CSS能够简化网页的格式代码，加快下载显示的速度，也减少了需要上传的代码数量，大大减少了重复劳动的工作量。|D. CSS是Cascading Stylesheets的缩写，中文意思是层叠样式表|B. 单个HTML标签不能使用多个层叠样式表</td></tr>
+<tr><td nowrap>CD</td><td nowrap>样式表的声明分为<br>A. 选择符（selector）、块{}（block）、属性（properties）|B. 块里只包含属性的取值（valuE.|C. 选择符（selector）和块{}（block）|D. 块里包含属性（properties）和属性的取值（valuE.|B. 块里只包含属性（properties）</td></tr>
+<tr><td nowrap>BDE</td><td nowrap>下面说法不正确的是<br>A. &lt;table&gt;&lt;tr&gt;&lt;td&gt;这三个标记是最重要的表格标记|B. &lt;table&gt;&lt;tr&gt;&lt;td&gt;这三个标记是最重要的框架标记|C. &lt;FRAMESET&gt; &lt;FRAME&gt;这两个标记是最重要的框架标记|D. &lt;FRAMESET&gt; &lt;FRAME&gt;这两个标记是最重要的表格标记|E. &lt;HTML&gt; &lt;Body&gt;这两个标记是最重要的表格标记</td></tr>
+<tr><td nowrap>ABDE</td><td nowrap>JavaScript的数据类型主要有 。<br>A.字符串值|B.数字|C.日期型|D.逻辑值|E.布尔值</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>关于变量的命名规则，下列说法正确的是 。<br>A.首字符必须是大写，小写的字母，下划线（_）或美元符（$）。|B.后续的字符可以是字母，数字，下划线或美元符。|C.变量名称不能是保留字。|D.长度是任意。|E.不区分大小写。</td></tr>
+<tr><td nowrap>ABE</td><td nowrap>JavaScript运算符包括 。<br>A.==|B.+=|C.. |D.++|E.||</td></tr>
+<tr><td nowrap>ACDE</td><td nowrap>关于JAVASCRIPT事件，下列说法正确的是 。<br>A.事件是用户对浏览器所做的特定的动作（操作），是实现交互操作的一种机制|B.对象发生改变时调用的事件是onBlur|C.当一个表单中的对象被点击时，执行的JavaScript事件是onClick|D.当浏览器完成加载一个窗口或者加载完成框架集合中的所有框时，执行的JavaScript事件是onLoad|E.当 select事件发生时执行的JavaScript 事件是onSelect</td></tr>
+<tr><td nowrap>ACDE</td><td nowrap>有关JAVASCRIPT的定时器，下列说法正确的是 。<br>A.用于指定在一段特定的时间后执行某段程序|B.setTimeout(“&lt;表达式&gt;”，毫秒数)其功能是在经过毫秒数后重复执行&lt;表达式&gt;|C.clearTimeout(iD.是用于终止一个定时器|D.setInterval(“&lt;表达式&gt;”，毫秒)的功能是每隔毫秒数重复执行&lt;表达式&gt;，直至窗口）框架被关闭或执行clearInterval。|E.clearInterval(iD.的功能是终止定时器</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>open方法的窗口规格参数，下列说法正确的是 。<br>A.是否显示网址工具栏，用location|B.是否显示菜单工具栏，用menubar|C.是否显示滚动条，用scrollbars|D.是否显示状态栏，用status|E.是否可以改变窗口的大小，用resize</td></tr>
+<tr><td nowrap>AD</td><td nowrap>在Javascript中，对于浏览器对象的层次关系理解正确的是（）<br>A.window对象是所有页面内容的根对象|B.document对象包含location对象和history对象|C.location对象包含history|D.document对象包含form对象|E.document对象包含location对象</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>表单对象的属性主要有 。<br>A.action是表单动作|B.elements是以索引表示的所有表单元素|C.encoding是编码的类型|D.length是表单元素的个数|E.method是目标</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>表单对象的方法，下列说法正确的是 。<br>A.handleEvent(事件)是使事件处理程序生效|B.reset()是重置表单元素|C.submit()是表单提交|D.表单对象的方法是表单对象为完成需求而调用的方法|E.表单对象的方法是表单对象通过事件而调用的方法</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>按钮对象的属性主要有 。<br>A.form表示该对象所在的表单|B.name表示该对象的name属性|C.type表示该对象的type属性|D.value表示该对象的value属性|E.status表示该对象的status属性</td></tr>
+<tr><td nowrap>ABCDE</td><td nowrap>选择对象的属性主要有 。<br>A.form表示该对象所在的表单|B.name表示该对象的name属性|C.length表示该对象的选项的数目|D.options表示该对象的&lt;option&gt;标记|E.selectedIndex表示该对象的所选项目的索引值</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>以下哪些是javascript的全局函数： <br>A. escape |B. parseFloat |C. eval |D. setTimeout |E. alert</td></tr>
+<tr><td nowrap>A</td><td nowrap>C#中MyClass 为一自定义类，其中定义了以下方法\r\npublic void Hello()\r\n{\r\n…\r\n}\r\n使用以下语句创建了该类的对象，并使变量obj 引用该对象：\r\nMyClass obj = new MyClass();\r\n那么，可如何访问类MyClass 的Hello 方法?<br>A. obj.Hello();|B. obj::Hello();|C. MyClass.Hello();|D. MyClass::Hello();</td></tr>
+<tr><td nowrap>B</td><td nowrap>已知类MyClass 中事件MouseClicked 定义如下：\r\npublic static event MouseClickedListener MouseClicked;\r\n执行下列语句：\r\nMouseClicked += new MouseClickedListener(obj.DoSomething);\r\nMouseClicked += new MouseClickedListener(obj.DoSomething);\r\n然后引发该MouseClicked 事件，其结果为：<br>A. obj.DoSomething 方法被调用4 次|B. obj.DoSomething 方法被调用2 次|C. obj.DoSomething 方法被调用1 次|D. obj.DoSomething 方法不会被调用</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列代码存在一个编译错误。如何消除该错误?（左边为行号）\r\n1  public void Test(object param) {\r\n2      Resource r0 = new Resource(100)；\r\n3      using( Resource r1 = new Resource(100)) {\r\n4        r1.print();\r\n5        r1 = new Resource(50);\r\n6      }\r\n7  }<br>A. 第1 行声明的param 参数未在方法内使用，删除该参数；|B. 第3 行修改为：using( Resource r1 = new Resource(100)；) {|C. 删除第5行|D. 第5 行修改为：r1 = r0;</td></tr>
+<tr><td nowrap>A</td><td nowrap>以下关于for循环的说法不正确的是____。<br>A. for循环只能用于循环次数已经确定的情况|B. for循环是先判定表达式，后执行循环体语句|C. for循环体语句中，可以用break语句跳出循环体|D. for循环体语句中，可以包含多条语句，但要用花括号括起来</td></tr>
+<tr><td nowrap>AB</td><td nowrap>下列的数组定义语句，不正确的是____。<br>A. int a [] = new int [5] {1, 2, 3, 4, 5}|B. int [,] a = new int [3][4]|C. int [][] a = new int [3][];|D. int [] a = {1, 2, 3, 4};</td></tr>
+<tr><td nowrap>A</td><td nowrap>关于C#语言的方法，下列叙述中正确的是____。<br>A. 方法的定义不能嵌套，但方法调用可以嵌套|B. 方法的定义可以嵌套，但方法调用不能嵌套|C. 方法的定义和调用都不能嵌套|D. 方法的定义和调用都可以嵌套</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下对枚举的定义，正确的是____。<br>A. enum a = {one, two, three}|B. enum a {a1, a2, a3};|C. enum a = {‘1’,  ’2’,  ’3’};|D. enum a {“one”,  ”two”,  ”three”};</td></tr>
+<tr><td nowrap>D</td><td nowrap>枚举型常量的值不可以是____类型<br>A. int|B. long|C. ushort|D. double</td></tr>
+<tr><td nowrap>B</td><td nowrap>调用重载方法时，系统根据________来选择具体的方法。<br>A. 方法名|B. 参数的个数和类型|C. 参数名及参数个数|D. 方法的返回值类型</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列的_______不是构造函数的特征。<br>A. 构造函数的函数名和类名相同|B. 构造函数可以重载|C. 构造函数可以带有参数|D. 可以指定构造函数的返回值</td></tr>
+<tr><td nowrap>B</td><td nowrap>已知类B是由类A继承而来，类A中有一个名为M的非虚方法，现在希望在类B中也定义一个名为M的方法，若希望编译时不出现警告信息，则在类B中声明该方法时，应使用________修饰符。<br>A. static|B. new|C. override|D. virtual</td></tr>
+<tr><td nowrap>A</td><td nowrap>为了能够在程序中捕获所有的异常，在catch语句的括号中使用的类名为_________。<br>A. Exception|B. DivideByZeroException|C. FormatException|D. 以上三个均可</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于异常，下列的说法中不正确的是_________。<br>A. 用户可以根据需要抛出异常|B. 被调用方法可通过throw语句把异常传回给调用方法|C. 用户可以自己定义异常|D. 在C#中有些异常不能被捕获</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列说法中正确的是_________。<br>A. 在C#中，编译时，对数组下标越界将作检查|B. 在C#中，程序运行时，数组下标越界也不会产生异常|C. 在C#中，程序运行时，数组下标越界是否产生异常由用户确定|D. 在C#中，程序运行时，数组下标越界一定会产生异常</td></tr>
+<tr><td nowrap>ACD</td><td nowrap>下面对Read()和ReadLine()方法的描述，哪些是正确的_____。<br>A. Read()方法一次只能从输入流中读取一个字符|B. 使用Read()方法读取的字符不包含回车和换行符|C. 使用ReadLine()方法读取的字符不包含回车和换行符|D. 只有当用户按下回车键时，Read( )和ReadLine()方法才会返回</td></tr>
+<tr><td nowrap>ABD</td><td nowrap>下面对Write()和WriteLine()方法的描述，哪些是正确的____。<br>A. WriteLine()方法在输出字符串的后面添加换行符|B. 使用Write()输出字符串时，光标将会位于字符串的后面|C. 使用Write()和WriteLine()方法输出数值变量时，必须要先把数值变量转换成字符串|D. 使用不带参数的WriteLine()方法时，将不会产生任何输出</td></tr>
+<tr><td nowrap>A</td><td nowrap>68 以下标识符中，正确的是____。<br>A. _nName|B. typeof|C. 6b|D. x5#</td></tr>
+<tr><td nowrap>D</td><td nowrap>以下类型中，不属于值类型的是____。<br>A. 整数类型|B. 布尔类型|C. 字符类型|D. 类类型</td></tr>
+<tr><td nowrap>D</td><td nowrap>while语句循环结构和do…while 语句循环结构的区别在于____。<br>A. while语句的执行效率较高|B. do…while语句编写程序较复杂|C. 无论条件是否成立, while语句都要执行一次循环体|D. do…while循环是先执行循环体，后判断条件表达式是否成立，而while语句是先判断条件表达式，再决定是否执行循环体.</td></tr>
+<tr><td nowrap>B</td><td nowrap>DotNet包含两个部分，即公共语言运行时和框架类库<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#中，子类不能继承父类中用private修饰的成员变量和成员方法。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>可以阻止某一个类被其他类继承。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>一个窗体中可以有多个弹出式菜单。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#Net中，窗体父子关系通过“属性”窗口来创建。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>使用Directory类的Move()方法可以删除文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>使用FileInfo类的Copy()方法可以复制文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>DataSet对象中的表可以和数据库中的表同名，也可以不同名。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>Command对象可以执行SQL语句。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>注释的作用是使程序在执行时在屏幕上显示//之后的内容。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#语言中的数组元素下标总是从0开始，下标可以是整数或整型表达式。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>无论C#源程序包含几个类的定义，都可用同一个源程序文件以B.cs命名<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>即使一个类中未显式定义构造函数，也会有一个缺省的构造函数，缺省的构造函数是无参的，函数体为空。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#的方法中定义一个常量要用const关键字。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#的类不允许多重继承，但接口支持多重继承。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>所谓抽象类就是包含有抽象方法的类。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在异常处理中总是将可能产生异常的语句放在try块中，用catch子句\r\n去处理异常，而且一个try块之后只能对应一个catch语句。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>所有的文件输入/输出流都在System.write和System.read中。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>一个异常处理中 finally语句块只能有一个或者可以没有。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>类体中private修饰的变量在本类中能访问，类生成的对象也能访问。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#语言中一个Char类型的数据占用2个字节大小的内存空<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>不能指定接口中方法的修饰符。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在同一行上可以书写多条语句，每条语句间用分号分隔。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在数据类型转化时，只能通过类型转换关键字或Convert类实现。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在定义数组时不允许为数组中的元素赋值。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>定义枚举时至少为其中的一个枚举成员赋值。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>接口与类同样是面向对象程序设计的核心，是创建对象的模版。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>委托是将方法作为参数传递给另一方法的一种数据类型。事件与委托没有关系。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>如果要实现重写，在基类的方法中必须使用virtual关键字，在派生类的方法中必须使用overrides关键字。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#类中，this代表了当前类本身。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>静态类和实例类的区别在于：静态类不需要初始化即可直接使用，实例类需要进行实例化，生成对象才可使用。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>用Interval属性设置Timer控件Tick事件发生的时间间隔单位为秒。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>委托是将方法作为参数传递给另一方法的一种数据类型。事件与委托没有关系。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>如果要实现重写，在基类的方法中必须使用virtual关键字，在派生类的方法中必须使用overrides关键字。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>菜单项标题中有含有带下划线的字符，这是快捷键。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>如果要对System.Web.UI.WebControls.Label类的一个对象设置它的背景颜色，需要设置它的哪一个属性（ ）  <br>A.Anchor|B.BackColor|C.Capture|D.Text</td></tr>
+<tr><td nowrap>B</td><td nowrap>在创建超级链接时需要把一个网址设置给超级链接控件的______属性。<br>A.TARGET|B.NAVIGATEURL|C.SITE|D.IMAGEURL</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪个类的对象是用来建立数据库连接的（ ）  <br>A.System.Data.DataSet|B.System.Data.SqlClient.SqlConnection|C.System.Data.SqlClient.SqlCommand|D.System.Data.SqlClient.SqlDataAdapter</td></tr>
+<tr><td nowrap>C</td><td nowrap>DataSet类的对象是哪个类的对象的集合( )  <br>A.DataColumn|B.DataRow|C.DataTable|D.DataSet</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪个验证控件用于强制用户必须输入某一范围内的信息（）?。  <br>A.RequiredFieldValidator；|B.RangeValidator；|C.RegularExpressionValidator；|D.CustomValidator；</td></tr>
+<tr><td nowrap>A</td><td nowrap>要连接SQLSERVER数据库需要引用<br>A.SYSTEM.DATA.SQLCLIENT|B.SYSTEM.DATA.SQLTYPES|C.SYSTEM.DATA.OLEDB|D.SYSTEM.DATA.OLEDB.SQLCLIENT</td></tr>
+<tr><td nowrap>C</td><td nowrap>在ASP.NET中有Button控件myButton，要是单击控件时，导航到其他页面http://www.abc.com, 正确的代码为( )。<br>A.private void myButton_Click(object sender, System.EventArgs e){Redirect(“http://www.abc.com”);|B.private void myButton_Click(object sender, System.EventArgs e){Request.Redirect(“http://www.abc.com”);|C.private void myButton_Click(object sender, System.E</td></tr>
+<tr><td nowrap>D</td><td nowrap>Application对象的有效期是?  <br>A.20分钟|B.20秒钟|C.10分钟|D.从应用程序启动到结束</td></tr>
+<tr><td nowrap>A</td><td nowrap>在对SQL Server 数据库操作时应选用（）。<br>A.SQL Server .NET Framework 数据提供程序；|B.OLE DB .NET Framework 数据提供程序；|C.ODBC .NET Framework 数据提供程序；|D.Oracle .NET Framework数据提供程序；</td></tr>
+<tr><td nowrap>B</td><td nowrap>我们使用ADO.NET向MS SQL数据库提交一句带参数的UPDATE SQL语句的时候不会使用下面哪个类?（ ）<br>A.SqlConnection|B.SqlDataReader|C.SqlCommand|D.SqlParameter</td></tr>
+<tr><td nowrap>B</td><td nowrap>某电子商务网站在设计会员注册界面时候，必须保证年龄不要求超过100。需要用什么验证控件?<br>A.RuiredFieldValidator控件|B.RuiredFieldValidator控件, RangeValidator控件。|C.RangeValidator|D.CompareValidator</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列哪个验证控件用于强制用户输入的信息必须满足一定的格式（）?。  <br>A.RequiredFieldValidator；|B.RangeValidator；|C.RegularExpressionValidator；|D.CustomValidator；</td></tr>
+<tr><td nowrap>B</td><td nowrap>一个HTML文档必须包含三个元素，它们是head、html和（ ）。<br>A.script|B.body|C.title|D.link</td></tr>
+<tr><td nowrap>B</td><td nowrap>在.NET程序设计中，语句Console.ReadLine( )的作用是（ ）?  <br>A.将程序暂停，直到用户输入回车|B.阅读用户输入|C.将内容输出到屏幕|D.读取网络中的数据流</td></tr>
+<tr><td nowrap>D</td><td nowrap>文件上传组件的PostedFile.FileName属性表示的是（ ）  <br>A.服务器端文件的物理路径|B.客户端文件的物理路径|C.服务器端文件的名称|D.客户端文件的名称（带路径）</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列哪个选项不属于样式表的选择器种类?  <br>A.类选择器|B.ID选择器|C.HTML选择器|D.生成选择器</td></tr>
+<tr><td nowrap>C</td><td nowrap>通过用户指定的SQL语句从数据库中获取数据，并填充一个数据集，可使用哪个类的对象的哪个方法（ ）  <br>A.System.Data.SqlClient.SqlCommand类 ExecuteNonQuery()方法|B.System.Data.SqlClient.SqlCommand类 ExecuteScalar()方法|C.System.Data.SqlClient.SqlDataAdapter类 Fill()方法|D.System.Data.SqlClient.SqlDataAdapter类 Update()方法</td></tr>
+<tr><td nowrap>B</td><td nowrap>在下列选项中，不属于.NET平台的核心技术的是（ ）  <br>A.NET Framework|B.NET企业级服务器|C.Visual Studio.NET|D.ADO数据连结</td></tr>
+<tr><td nowrap>D</td><td nowrap>要想让文字滚动起来，需要用到哪个标记?  <br>A.meta|B.body|C.table|D.marquee</td></tr>
+<tr><td nowrap>D</td><td nowrap>在javascript，定义一个整型变量a，下列语法正确的是（）?  <br>A.int a；|B.Int a；|C.var a=\'0\'；|D.var a；</td></tr>
+<tr><td nowrap>A</td><td nowrap>ASP.NET框架中，服务器控件是为配合Web表单工作而专门设计的。服务器控件有两种类型，它们是( )<br>A.HTML控件和Web控件|B.HTML控件和XML控件|C.XML控件和Web控件|D.HTML控件和IIS控件</td></tr>
+<tr><td nowrap>D</td><td nowrap>______对象的信息保存在客户端的浏览器上<br>A.APPLICATION|B.SESSION|C.TRACE|D.COOKIE</td></tr>
+<tr><td nowrap>D</td><td nowrap>若要求用户两次输入的密码必须相同,应该添加______验证控<br>A.REQUIREDFIELDVALIDATOR|B.RANGEVALIDATOR|C.REGULAREXPRESSIONVALIDATOR|D.COMPAREVALIDATOR</td></tr>
+<tr><td nowrap>D</td><td nowrap>若要求用户输入的内容必须在指定的范围,应该添加______验证控<br>A.REQUIREDFIELDVALIDATOR|B.COMPAREVALIDATOR|C.REGULAREXPRESSIONVALIDATOR|D.RANGEVALIDATOR</td></tr>
+<tr><td nowrap>C</td><td nowrap>哪个不是RESPONSE的方法?<br>A.WRITE()|B.REDIRECT()|C.HTMLENCODE()|D.END()</td></tr>
+<tr><td nowrap>B</td><td nowrap>想实现设网页的动态布局，需要用到（）。  <br>A.div html控件；|B.table Web服务器控件；|C.textbox Web服务器控件；|D.multiViw Web服务器控件；</td></tr>
+<tr><td nowrap>A</td><td nowrap>如果要初始化一个类的对象应该使用哪个关键字（ ）  <br>A.new|B.class|C.base|D.set</td></tr>
+<tr><td nowrap>D</td><td nowrap>判断用户通过输入界面中的文本框控件输入的信息是否是偶数，要求用验证控件实现，我们需要选择哪种验证控件<br>A.RequiredFieldValidator|B.RangeValidator|C.CompareValidator|D.CustomerValidator</td></tr>
+<tr><td nowrap>D</td><td nowrap>连接ACCESS数据库最好的对象是<br>A.SQLCOMMAND|B.SQLCONNECTION|C.CONNECTIONSTRING|D.OLEDBCONNECTION</td></tr>
+<tr><td nowrap>C</td><td nowrap>能获取客户端信息的对象是_______。<br>A.RESPONSE|B.APPLICATION|C.REQUEST|D.SESSION</td></tr>
+<tr><td nowrap>C</td><td nowrap>能实现网页转向的方法是________。<br>A.RESPONSE.APPENDHEADER()|B.RESPONSE.CLEARHEADERS()|C.RESPONSE.REDIRECT()|D.RESPONSE.ADDHEADER()</td></tr>
+<tr><td nowrap>D</td><td nowrap>若想将多个RADIOBUTTON组合起来构成一组,则需要设置它们的______属性。<br>A.UNIQUEID|B.STYLE|C.PARENT|D.GROUPNAME</td></tr>
+<tr><td nowrap>B</td><td nowrap>Javascript文件中的注释是（）?  <br>A.&lt;!----&gt;|B.//|C.///|D.//* */</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列哪个是一切类型的基类（ ）  <br>A.System|B.System.Window|C.System.Object|D.AllClass</td></tr>
+<tr><td nowrap>C</td><td nowrap>用户控件的扩展名是?  <br>A.html|B.aspx|C.ascx|D.jsp</td></tr>
+<tr><td nowrap>A</td><td nowrap>要想设置背景图片，需要用到哪个样式?  <br>A.background-image|B.image|C.text-align|D.a:link</td></tr>
+<tr><td nowrap>A</td><td nowrap>HTML文件中的注释是（）?  <br>A.&lt;!-- --&gt;|B.//|C.///|D./* */</td></tr>
+<tr><td nowrap>A</td><td nowrap>下列哪个验证控件用于强制用户必须输入信息（）?。  <br>A.RequiredFieldValidator；|B.RangeValidator；|C.RegularExpressionValidator；|D.CustomValidator；</td></tr>
+<tr><td nowrap>B</td><td nowrap>使用SESSION的____方法可以结束一个会话。<br>A.CLEAR()|B.ABANDON()|C.REMOVEALL()|D.REMOVEAT()</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列哪个选项不属于样式表的使用方式?  <br>A.页内样式，也叫页内样式|B.行内样式，也叫内联样式|C.单独的外部样式表文件|D.皮肤</td></tr>
+<tr><td nowrap>D</td><td nowrap>当用户输入不合法的内容时,要想在一个对话框中显示错误信息应该添加______验证控<br>A.REQUIREDFIELDVALIDATOR|B.REGULAREXPRESSIONVALIDATOR|C.RANGEVALIDATOR|D.VALIDATIONSUMMARY</td></tr>
+<tr><td nowrap>C</td><td nowrap>连接SqlServer数据库,除了导入Systme.Data命名空间外,还要导入( )?  <br>A.OleDbDataReader|B.MicroSoft.Data.ODBC|C.MicroSoft.Data.SqlClient|D.MicroSoft.Data.OleDb</td></tr>
+<tr><td nowrap>B</td><td nowrap>用于声明静态属性或方法的关键字（ ）  <br>A.const|B.static|C.enum|D.void</td></tr>
+<tr><td nowrap>D</td><td nowrap>要想实现在线人数统计,不需要在下列______事件中添加代码。<br>A.APPLICATION_START()|B.SESSION_START|C.SESSION_END()|D.APPLICATION_END()</td></tr>
+<tr><td nowrap>D</td><td nowrap>在构造操作数据库的命令对象时除了提供连接对象外还需要提供<br>A.STRINGCONNECTION|B.CONNECTION|C.CONNECTIONSTRING|D.SQL语句</td></tr>
+<tr><td nowrap>A</td><td nowrap>页面上有一个DropDownList控件，如果要实现当前用户对DropDownList控件中选项的选择发生变化时重新加载页面的功能，则需要设置该控件的（ ）属性?  <br>A.AutoPostBack|B.Enabled|C.IsPostBack|D.Visible</td></tr>
+<tr><td nowrap>ABD</td><td nowrap>在ASP.NET中，可以使用多种方法从一个页面跳转到另外一个页面，或者联接到其他的超级连接，以下哪个是可选择的方案，（）。<br>A.使用Response对象的Redirect方法|B.使用Server对象的Execute方法|C.使用Server对象|D.使用Application对象的DirectTo方法</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>在ASP.NET中，下列关于列表控件的DataSource属性的描述正确的是（）。<br>A.DataSource属性与数据绑定相关|B.列表控件的数据源类型可以是数据列表|C.列表控件的数据源类型可以是数据视图也可以是哈希表|D.DataSource用于数据绑定时对数据行进行筛选</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>ASP.net的身份验证方式有哪些<br>A.Windwos(默认)|B.用IIS...From(窗体)|C.用帐户....Passport(密钥)|D.密码验证</td></tr>
+<tr><td nowrap>ABD</td><td nowrap>在注册界面中，需要用户必须输入密码，密码要求只能是字母或数字的组合，不能超过8位，且两次输入的密码必须一致，都需要用到哪几种验证控件：<br>A.RequiredFieldValitor|B.CompareValidator|C.RangeValidator|D.RegularExpressionValidator</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>在ASP.NET中，下列属于服务器端控件TextBox控件的TextMode属性的取值的是（）。<br>A.SingleLine|B.MultiLine|C.Password|D.Language</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#中，接口可以被多重继承而类不能。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>每个web应用程序中，可以有多个web.config文件，他们可以分布于不同的文件夹，完成对当前文件夹的控制。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>Cookie对象提供了一种在客户断保存信息的方法。  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#中，装箱操作是将值类型显式地转化成引用类型。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>DataSet对象由DataRow,DataColumn,DataTable,DataContrain等对象组成.  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>每个web应用程序中，最多只能由一个web.config文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>RadioButtonList控件和CheckBoxList控件类似，都可以在一组选项中选出一项来，但是不允许同时选择多项。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>用户控件使用起来非常方便，直接拖放就可以了，不能通过代码加载。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>Application对象是一个全局性的对象，里面存储的信息可以被多个用户所共享，所以使用时候要注意加锁和解所问题。  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>每个web应用程序最多有1个Global.asax文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>每个DataList控件必须至少要定义一个项摸板。  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列说法错误的是（ ）。<br>A．内嵌表值函数没有函数主体，返回的表是单个SELECT语句的结果集|B．多语句表值函数的调用与内嵌表值函数的调用方法相同|C．多语句表值函数的功能可以用标量函数来实现|D．在内嵌表值函数的定义中，不使用BEGIN?END块定义函数主体</td></tr>
+<tr><td nowrap>A</td><td nowrap>以下哪个事件不能激活DML触发器的执行（ ）。<br>A．SELECT|B. UPDATE|C. INSERT|D. DELETE</td></tr>
+<tr><td nowrap>C</td><td nowrap>下面哪个选项不是SQL Server支持的存储过程类型（ ）。<br>A．系统存储过程|B. 扩展存储过程|C. 应用存储过程|D. 用户存储过程</td></tr>
+<tr><td nowrap>B</td><td nowrap>定义了一个FORWARD_ONLY类型的游标，以下操作能正确执行的是（ ）。<br>A．fetch first from 游标|B．fetch next from 游标|C．fetch prior from 游标|D．fetch last from 游标</td></tr>
+<tr><td nowrap>A</td><td nowrap>为变量赋值的写法，错误的是（ ）。<br>A．set @a=3,@b=4|B．select @a=3,@b=4|C．set @a=3;set @b=4|D．select @a=3;select @b=4</td></tr>
+<tr><td nowrap>C</td><td nowrap>关于EXISTS谓词的使用，错误的是（ ）。<br>A．EXISTS谓词返回的结果为TRUE或FALSE|B．由EXISTS引出的子查询，select语句后一般不写具体的属性列，而使用*|C．EXISTS既可以用在相关子查询中，又可以用在不相关子查询中|D．NOT EXISTS与EXISTS返回的结果相反</td></tr>
+<tr><td nowrap>B</td><td nowrap>查询“图书”表中书名含有“计<br>A. SELECT * FROM 图书 WHERE book_name LIKE ‘计*’B. SELECT * FROM 图书 WHERE book_name LIKE ‘计%’ C. SELECT * FROM 图书 WHERE book_name = ‘计*’D. SELECT * FROM 图书 WHERE book_name = ‘计%</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于用户自定义函数，以下说法错误的是（ ）。<br>A．多语句表值函数可以看作是标量型和内嵌表值型函数的结合体|B．内嵌表值函数的返回值类型为表|C．表值函数在调用时可以只使用函数名|D．标量函数的返回值类型为表</td></tr>
+<tr><td nowrap>A</td><td nowrap>定义一个存储过程查询某学生某门课程的成绩和学分，存储过程的首部如下形式：\r\nCreate Procedure student_info @name char(8),@kc_name char(16) 则下列执行方式中，正确的是（ ）。<br>A. Execute student_info ‘李明’，’操作系统’|B. Exec student_info (’操作系统’,‘李明’)|C. Exec student_info 李明,操作系统|D. Execute student_info ’操作系统’,‘李明’</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于权限，说法错误的是（ ）。<br>A．被授权者将获得的权限授予其他用户，需要在执行授权语句时加with grant option|B．授予数据库级权限时，只能在master数据库中授权|C．授予权限时，ALL表示授予所有可用的对象权限|D．对public角色授权，相当于对数据库中所有用户授权</td></tr>
+<tr><td nowrap>D</td><td nowrap>通过游标操纵数据库，以下说法错误的是（ ）。<br>A．在定义游标的查询语句时，必须加上FOR UPDATE从句|B．使用FOR UPDATE从句没有加OF表示通过游标可以修改表中的任何一列|C．FOR UPDATE OF age 表示通过游标只能对age属性进行修改|D．使用FOR UPDATE从句表示只能通过游标更新表数据，而不能删除表数据</td></tr>
+<tr><td nowrap>C</td><td nowrap>使用界面对表中数据进行增、删、改操作时，点击相应表右键的哪个选项（ ）。<br>A．编辑|B．设计|C．打开表|D．以上均错误</td></tr>
+<tr><td nowrap>C</td><td nowrap>能够将‘java’课的学分赋值给变量的语句是哪一个（ ）。<br>A．select credit into @credit from course where cname=‘java’|B．select credit=@credit from course where cname=‘java’|C．select @credit= credit from course where cname=‘java’|D．select credit from course where cname=‘java’and credit=@credit</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于T-SQL语言中的CASE语句，以下说法正确的是（ ）。<br>A．then关键字后面可以使用insert、update和delete语句|B．then关键字后面可以使用print语句|C．case关键字后面不能有任何的表达式|D．case语句中else关键字可以省略</td></tr>
+<tr><td nowrap>B</td><td nowrap>在删除表时，主表与从表删除的顺序为（ ）。<br>A．先删除主表，再删除从表|B．先删除从表，再删除主表|C．先删除哪一个表都可以|D．只有先删除表之间的约束，才能删除表</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下可以用来对触发器的文本内容进行加密的语句是（ ）。<br>A. WITH CHECK OPTION|B. WITH ENCRYPTION|C. DBCC SHOWCONTIG|D. WITH FILLFACTOR</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于创建永久备份设备，下列说法错误的是（ ）。<br>A．执行系统存储过程sp_addumpdevice创建永久备份设备|B．执行系统存储过程sp_dropdevice删除永久备份设备|C．若被删除的“命名备份设备”的类型为磁盘，那么必须指定DELFILE选项|D．只须指定该命名备份设备的物理名，无须指定该命名备份设备的逻辑名</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下有关TRUNCATE TABLE命令说法正确的是（ ）。<br>A．TRUNCATE TABLE相当于DROP TABLE|B．TRUNCATE TABLE相当于无条件的DELETE FROM|C．TRUNCATE TABLE是删除表数据以及表结构|D．TRUNCATE TABLE可以有选择性的截断表中的数据</td></tr>
+<tr><td nowrap>C</td><td nowrap>关于AFTER触发器和INSTEAD OF触发器说法正确的是（ ）。<br>A．AFTER触发器和INSTEAD OF触发器既执行触发器内的语句又执行触发事件|B．AFTER触发器只执行触发器内的语句不执行触发事件|C．INSTEAD OF触发器只执行触发器内的语句不执行触发事件|D．AFTER触发器和INSTEAD OF触发器只执行触发器内的语句不执行触发事件</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于用户自定义函数，以下说法错误的是（ ）。<br>A．多语句表值函数可以看作是标量型和内嵌表值型函数的结合体|B．内嵌表值函数的返回值类型为表|C．表值函数在调用时可以只使用函数名|D．标量函数的返回值类型为表</td></tr>
+<tr><td nowrap>A</td><td nowrap>创建用户自定数据类型，使用哪个系统定义的存储过程（ ）。<br>A．sp_addtype|B．sp_type|C．type|D．addtype</td></tr>
+<tr><td nowrap>B</td><td nowrap>关于触发器的描述，下列说法正确的是（ ）。<br>A．触发器是在数据修改前被触发，约束是在数据修改后被触发|B．触发器是一个能自动执行的特殊的存储过程|C．触发器作为一个独立的对象存在，与数据库中其他对象无关|D．inserted表和deleted表是数据库中的物理表</td></tr>
+<tr><td nowrap>A</td><td nowrap>SQL语言中，条件“年龄BETWEEN 40 AND 50”表示年龄在40至50之间，且(      )。<br>A.包括40岁和50岁|B.不包括40岁和50岁|C.包括40岁但不包括50岁|D.包括50岁但不包括40岁</td></tr>
+<tr><td nowrap>A</td><td nowrap>现有书目表book，包含字段：价格price (float)，类别type(char); 现在查询各个类别的平均价格、类别名称，以下语句正确的是（   ）<br>A．select avg(price),type from book group by type|B．select count(price),type from book group by price |C．select avg(price),type from book group by price|D．select count (price),type from book group by type</td></tr>
+<tr><td nowrap>A</td><td nowrap>定义事务的一组语句是：<br>A. Begin Tran、Commit、RollBack|B. Begin、Continue、End|C. Create Tran、Commit、RollBack  |D. Begin Tran、Continue、End</td></tr>
+<tr><td nowrap>B</td><td nowrap>SQL Server触发器主要针对下列语句创建（    ）。<br>A. SELECT、INSERT、DELETE|B. INSERT、UPDATE、DELETE|C. SELECT、UPDATE、INSERT|D. INSERT、UPDATE、CREATE</td></tr>
+<tr><td nowrap>B</td><td nowrap>当登录到WINDOWS的用户与SQL Server联接时，用户不用提供SQL Server帐号，这种认证模式就是WINDOWS认证机制。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>可以在企业管理器中修改数据库的名称。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>通配符“_”表示某单个字符。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>一个表上只能建立一个聚集索引。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>SQL sever 在进行数据操作时，总是先写数据库，然后记录日志。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下的HTML中，哪个是正确引用外部样式表的方法?<br>A. &lt;style src=&quot;mystyle.css&quot;&gt;|B. &lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;href=&quot;mystyle.css&quot;&gt;|C. &lt;stylesheet&gt;mystyle.css&lt;/stylesheet&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>在HTML文档中，引用外部样式表的正确位置是?<br>A. 文档的末尾|B. &lt;head&gt;部分|C. 文档的顶部|D. &lt;body&gt;部分</td></tr>
+<tr><td nowrap>A</td><td nowrap>哪个HTML标签可用来定义内部样式表?<br>A. &lt;style&gt;|B. &lt;script&gt;|C. &lt;css&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>哪个HTML属性可用来定义内联样式?<br>A. font|B. class|C. styles|D. style</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列哪个选项的CSS语法是正确的?<br>A. body:color=black|B. {body:color=black(body}|C. body{color: black}|D. {body;color:black}</td></tr>
+<tr><td nowrap>C</td><td nowrap>如何在CSS文件中插入注释?<br>A. // this is a comment|B. // this is a comment|C. /*this is a comment */|D. \' this is a comment</td></tr>
+<tr><td nowrap>C</td><td nowrap>CSS哪个属性可用来改变背景颜色?<br>A. bgcolor:|B. color:|C. background-color:</td></tr>
+<tr><td nowrap>B</td><td nowrap>如何为所有的&lt;h1&gt;元素添加背景颜色?<br>A. h1.all {background-color:#FFFFFF}|B. h1{background-color:#FFFFFF}|C. all.h1 {background-color:#FFFFFF}</td></tr>
+<tr><td nowrap>B</td><td nowrap>CSS如何改变某个元素的文本颜色?<br>A. text-color:|B. color:|C. fgcolor:|D. text-color=</td></tr>
+<tr><td nowrap>A</td><td nowrap>哪个CSS属性可控制文本的尺寸?<br>A. font-size|B. text-style|C. font-style|D. text-size</td></tr>
+<tr><td nowrap>C</td><td nowrap>以下的CSS中，可使所有&lt;p&gt;元素变为粗体的正确语法是?<br>A. &lt;p style=&quot;font-size:bold&quot;&gt;|B. &lt;p style=&quot;text-size:bold&quot;&gt;|C. p{font-weight:bold}|D. p {text-size:bold}</td></tr>
+<tr><td nowrap>A</td><td nowrap>如何显示没有下划线的超链接?<br>A. a{text-decoration:none}|B. a {text-decoration:no underline}|C. a {underline:none}|D. a {decoration:no underline}</td></tr>
+<tr><td nowrap>A</td><td nowrap>如何使文本以大写字母开头?<br>A. text-transform:capitalize|B. 无法通过CSS来完成|C. text-transform:uppercase</td></tr>
+<tr><td nowrap>C</td><td nowrap>css如何改变元素的字体?<br>A. font=|B. f:|C. font-family:</td></tr>
+<tr><td nowrap>B</td><td nowrap>如何改变元素的左边距?<br>A. text-indent:|B. margin-left:|C. margin:|D. indent:</td></tr>
+<tr><td nowrap>B</td><td nowrap>如何产生带有正方形的项目的列表?<br>A. list-type: square|B. list-style-type: square|C. type: square|D. type: 2</td></tr>
+<tr><td nowrap>A</td><td nowrap>我们可以在下列哪个HTML元素中放置JavaScript代码?<br>A. &lt;script&gt;|B. &lt;javascript&gt;|C. &lt;js&gt;|D. &lt;scripting&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>写“Hello World”的正确JavaScript语法是?<br>A. document.write(&quot;Hello World&quot;)|B. &quot;Hello World&quot;|C. response.write(&quot;Hello World&quot;)|D. (&quot;Hello World&quot;)</td></tr>
+<tr><td nowrap>C</td><td nowrap>插入JavaScript的正确位置是?<br>A. &lt;body&gt;部分|B. &lt;head&gt;部分|C. &lt;body&gt;部分和&lt;head&gt;部分均可</td></tr>
+<tr><td nowrap>A</td><td nowrap>引用名为“xxx.js”的外部脚本的正确语法是?<br>A. &lt;script src=&quot;xxx.js&quot;&gt;|B. &lt;script href=&quot;xxx.js&quot;&gt;|C. &lt;script name=&quot;xxx.js&quot;&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>如何在警告框中写入“Hello World”?<br>A. alertBox=&quot;Hello World&quot;|B. msgBox(&quot;Hello World&quot;)|C. alert(&quot;Hello World&quot;)|D. alertBox(&quot;Hello World&quot;)</td></tr>
+<tr><td nowrap>B</td><td nowrap>如何创建函数?<br>A. function:myFunction()|B. function myFunction()|C. function=myFunction()</td></tr>
+<tr><td nowrap>A</td><td nowrap>如何编写当i等于5时执行某些语句的条件语句?<br>A. if(i==5)|B. if i=5 then|C. if i=5|D. if i==5 then</td></tr>
+<tr><td nowrap>D</td><td nowrap>如何编写当i不等于5时执行某些语句的条件语句?<br>A. if =! 5 then|B. if &lt;&gt;5|C. if (i &lt;&gt; 5)|D. if(i != 5)</td></tr>
+<tr><td nowrap>C</td><td nowrap>下面这段代码运行的结果（）\r\n&lt;body&gt;\r\n&lt;scriptlanguage=”JavaScript”&gt;\r\ndocument.writeln(“文档最后修改于”+document.lastModifieD.;\r\nvar lastModObj=new Date(document.lastModifieD.;\r\nalert(lastModObj.getMinutes());\r\n&lt;/script&gt;\r\n&lt;/body&gt;<br>A. 弹出一个对象框|B. 没有任何输出|C. 在文档中显示文档最后修改的时间|D. 在对话框中显示文档最后修改的时间</td></tr>
+<tr><td nowrap>C</td><td nowrap>分析下面这段代码运行的结果（）\r\n&lt;scriptlanguage=”JavaScript”&gt;\r\nwith(document)\r\n{\r\nwriteln(“最后一次修改时间：” +document.lastModified+”&lt;br&gt;”);\r\nwriteln(“标题：” +document.title+”&lt;br&gt;”);\r\nwriteln(“URL：” +document.URL+”&lt;br&gt;”);\r\n}\r\n&lt;/script&gt;<br>A. 只输出最后一次修改的时间|B. 只输出文档的标题|C. 输出文档的标题、最后一次修改时间和当前的URL|D. 什么也不输出</td></tr>
+<tr><td nowrap>B</td><td nowrap>分析下面这个程序运行的结果（）\r\n&lt;script language=”JavaScript”&gt;\r\nvar str=”字符串”\r\nwith(document)\r\n{\r\nwriteln(“&lt;b&gt;您好，&lt;/b&gt;”);\r\nwrite(“欢迎光临本网页！” +”&lt;br&gt;”);\r\nwriteln(“&lt;p&gt;&lt;b&gt;在js标签之间，”);\r\nwriteln(str+”可以写在这里&lt;/b&gt;&lt;/p&gt;”);\r\n}\r\n&lt;/script&gt;<br>A. 会有”&lt;br&gt;”这样的字符输出|B. 第6行输出字符后会换行|C. 最后页面会出错|D. 会有乱码出现</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下是历史对象的属性的是（）<br>A. Current|B. Length|C. href|D. Next</td></tr>
+<tr><td nowrap>D</td><td nowrap>对location对象的href属性的叙述错误的是（）<br>A. 可以获取当前路径|B. 可以改变当前路径|C. 可以用来刷新页面|D. 是只读属性</td></tr>
+<tr><td nowrap>A</td><td nowrap>下列不属于访问指定节点的方法的是（）<br>A. obj.value|B. getElementByTagName|C. getElementsByName|D. getElementById</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列对符号所表示的意义解释错误的是（）<br>A. ˆ(尖号)：匹配字符串的开头|B. $（美元符号）：匹配字符串的结尾|C. ?（问号）：匹配前面的子表达式一次或多次|D. \\（反斜杠）：对特殊字符的特殊元字符含义进行转义</td></tr>
+<tr><td nowrap>A</td><td nowrap>弹出输入框，默认内容是“Hello World”的正确javascript语法是?<br>A. document.write(&quot;HelloWorld&quot;)|B. &quot;Hello World&quot;|C. response.write(&quot;HelloWorld&quot;)|D. prompt(“输入”,&quot;Hello World&quot;)</td></tr>
+<tr><td nowrap>C</td><td nowrap>有语句“var x=0;while(____) x+=2;”，要使while循环体执行10次，空白处的循环判定式应写为：<br>A．x&lt;10|B. x&lt;=10|C.x&lt;20|D.x&lt;=20</td></tr>
+<tr><td nowrap>B</td><td nowrap>JS语句\r\nvar a1=10;\r\nvar a2=20;\r\nalert(“a1+a2=”+a1+a2)\r\n将显示( )结果<br>A.a1+a2=30|B.a1+a2=1020|C.a1+a2=a1+a2|D.显示错误</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列代码能产生（）个输出\r\nvar i = 1;\r\nfor(;;i++)\r\nif(i)\r\nalert(i);\r\nelse\r\nbreak;<br>A．0个|B．无限多个|C．19个|D．20个</td></tr>
+<tr><td nowrap>AC</td><td nowrap>看下述文件\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n&lt;/head&gt;\r\n&lt;framesetcols=&quot;50%,*&quot;&gt;\r\n&lt;framename=&quot;hello&quot; src=&quot;b.htm&quot;&gt;\r\n&lt;framename=&quot;hi&quot; src=&quot;c.htm&quot;&gt;\r\n&lt;/frameset&gt;\r\n&lt;/html&gt;\r\n下面说明正确的是<br>A. src=&quot;c.htm&quot;是设定此框窗中要显示的网页档案，每个框窗一定要对应一个网页档案。|B. src=&quot;c.htm&quot;是设定此框窗中要显示的网页档案属性|C. &lt;frameset&gt;标记宣告HTML文件为框架模式，并设定视窗如何分割|D. &lt;frameset&gt;标记宣告HTML文件为表格模式，并设定视窗如何分割|E. &lt;/html&gt;标记宣告HTML文件没有结束</td></tr>
+<tr><td nowrap>ABDE</td><td nowrap>JavaScript的数据类型主要有 。<br>A.字符串值|B.数字|C.日期型|D.逻辑值|E.布尔值</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>关于变量的命名规则，下列说法正确的是 。<br>A.首字符必须是大写，小写的字母，下划线（_）或美元符（$）。|B.后续的字符可以是字母，数字，下划线或美元符。|C.变量名称不能是保留字。|D.长度是任意。|E.不区分大小写。</td></tr>
+<tr><td nowrap>ABE</td><td nowrap>JavaScript运算符包括 。<br>A.==|B.+=|C.. |D.++|E.||</td></tr>
+<tr><td nowrap>ABDE</td><td nowrap>有关Window对象，下列说法正确的是 。<br>A.代表一个浏览器的窗口或者框架|B.是一个文档，链接或历史对象组的顶层对象|C.窗口对象不能设置状态栏默认信息|D.判断窗口是否关闭，可以使用窗口对象的closed属性|E.设置窗口左边界的X坐标，可以使用窗口对象的screenX属性</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>有关窗口对象的属性，下列说法正确的是 。<br>A.设置状态栏的临时信息是用status属性|B.该窗口最近查阅过的网页用history属性|C.对当前窗口进行操作是用self属性|D.对最上方的窗口进行操作，是用parent属性|E.设置浏览器滚动条，可以使用窗口对象的scrollbars属性</td></tr>
+<tr><td nowrap>ABCDE</td><td nowrap>有关窗口对象的方法，下列说法正确的是 。<br>A.弹出警告信息用alert(信息字串)|B.显示确认信息对话框用confirm(信息字串)|C.显示提示信息，并提供可输入的字段用prompt(提示字串[，默认值])|D.将焦点移到该窗口，是用focus()|E.进入浏览器设置的主页，可以使用home()</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>按钮对象的属性主要有 。<br>A.form表示该对象所在的表单|B.name表示该对象的name属性|C.type表示该对象的type属性|D.value表示该对象的value属性|E.status表示该对象的status属性</td></tr>
+<tr><td nowrap>ABCDE</td><td nowrap>选择对象的属性主要有 。<br>A.form表示该对象所在的表单|B.name表示该对象的name属性|C.length表示该对象的选项的数目|D.options表示该对象的&lt;option&gt;标记|E.selectedIndex表示该对象的所选项目的索引值</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>以下哪些是javascript的全局函数： <br>A. escape |B. parseFloat |C. eval |D. setTimeout |E. alert</td></tr>
+<tr><td nowrap>C</td><td nowrap>__________是独立于CPU 的指令集，它可以被高效地转换为特定于某种CPU 的代码。<br>A. CLR|B. CLS|C. MSIL|D. XML Web Service</td></tr>
+<tr><td nowrap>B</td><td nowrap>在Visual Studio.NET窗口中，在__________窗口中可以察看当前项目的类和类型的层次信息。<br>A. 解决方案资源管理器|B. 类视图|C. 资源视图|D. 属性</td></tr>
+<tr><td nowrap>C</td><td nowrap>C#中每个int 类型的变量占用_______个字节的内存。<br>A. 1|B. 2|C. 4|D. 8</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#中，表示一个字符串的变量应使用以下哪条语句定义?<br>A. CString str;|B. string str;|C. Dim str as string|D. char * str;</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#编制的财务程序中，需要创建一个存储流动资金金额的临时变量，则应使用下列哪条语句?<br>A. decimal theMoney;|B. int theMoney;|C. string theMoney;|D. Dim theMoney as double</td></tr>
+<tr><td nowrap>A</td><td nowrap>C#中，新建一字符串变量str，并将字符串&quot;Tom\'s Living Room&quot;保存到串中，则应该使用下列哪条语句?<br>A. string str = &quot;Tom\\\'s Living Room&quot;;|B. string str = &quot;Tom\'s Living Room&quot;;|C. string str(&quot;Tom\'s Living Room&quot;);|D. string str(&quot;Tom&quot;s Living Room&quot;);</td></tr>
+<tr><td nowrap>C</td><td nowrap>分析下列C#语句，注意类MyClass 没有访问修饰符：\r\nnamespace ClassLibrary1\r\n{\r\nclass MyClass\r\n{\r\npublic class subclass\r\n{\r\nint i;\r\n}\r\n}\r\n}\r\n若必须为类MyClass 添加访问修饰符，并使MyClass 的可访问域保持不变，则应选择_________。<br>A. private|B. protected|C. internal|D. public</td></tr>
+<tr><td nowrap>C</td><td nowrap>在定义类时，如果希望类的某个方法能够在派生类中进一步进行改进，以处理不同的派生类的需要，则应将该方法声明成_________。<br>A. sealed 方法|B. public 方法|C. virtual 方法|D. override 方法</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#程序中，可使用try…catch 机制来处理程序出现的______错误。<br>A. 语法|B. 运行|C. 逻辑|D. 拼写</td></tr>
+<tr><td nowrap>C</td><td nowrap>在C#中，在方法MyFunc 内部的try..catch 语句中，如果在try 代码块中发生异常，并且在当前的所有catch 块中都没有找到合适的catch 块，则<br>A. .NET 运行时忽略该异常|B. .NET 运行时马上强制退出该程序|C. .NET 运行时继续在MyFunc 的调用堆栈中查找提供该异常处理的过程|D. .NET 抛出一个新的“异常处理未找到”的异常</td></tr>
+<tr><td nowrap>C</td><td nowrap>在C#中，下列哪些语句可以创建一个具有3 个初始值为&quot;&quot;的元素的字符串数组?<br>A. string StrList [3] (&quot;&quot;);|B. string [3] StrList = {&quot;&quot;,&quot;&quot;,&quot;&quot;};|C. string [] StrList = {&quot;&quot;,&quot;&quot;,&quot;&quot;};|D. string [] StrList = new string [3];</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列语句创建了多少个string 对象?\r\nstring [,] strArray = new string [3, 4];<br>A. 0|B. 3|C. 4|D. 12</td></tr>
+<tr><td nowrap>A</td><td nowrap>在使用FileStream 打开一个文件时，通过使用FileMode 枚举类型的_________成员，来指定操作系统打开一个现有文件并把文件读写指针定位在文件尾部。<br>A. Append|B. Create|C. CreateNew|D. Truncate</td></tr>
+<tr><td nowrap>A</td><td nowrap>关于结构类型，下列说法哪些是正确的?<br>A. 结构是值类型|B. 结构中不允许定义带参数的实例构造函数；|C. 结构中允许定义析构函数|D. 结构中可以定义成员方法，但是方法内不能使用this 指针</td></tr>
+<tr><td nowrap>B</td><td nowrap>在类的定义中，类的__________描述了该类的对象的行为特征。<br>A. 类名|B. 方法|C. 所属的名字空间|D. 私有域</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列哪些选项是.NET 异常处理的特点?<br>A. .NET 异常对象是一种特殊格式的32 位整型值|B. C#代码中抛出的异常对象，只能在C#编写的代码中捕获|C. 无法跨越进程边界引发和捕获异常对象|D. 不同编程语言抛出/捕获异常对象的语法可以不同</td></tr>
+<tr><td nowrap>A</td><td nowrap>以下类MyClass 的属性count 属于_____属性.\r\nclass MyClass\r\n{\r\nint i;\r\nint count\r\n{\r\nget\r\n{\r\nreturn i;\r\n}\r\n}\r\n}<br>A. 只读|B. 只写|C. 可读写|D. 不可读不可写</td></tr>
+<tr><td nowrap>A</td><td nowrap>C#中的类型float 对应.NET 类库中的_____。<br>A. System.Single|B. System.Double|C. System.Int32|D. System.Int64</td></tr>
+<tr><td nowrap>D</td><td nowrap>为了将字符串str = “123,456”转换成整数123456，应该使用以下哪条语句?<br>A. int Num = int.Parse(str);|B. int Num = str.Parse(int);|C. int Num = (int)str;|D. int Num = int.Parse(str,System.Globalization.NumberStyles.AllowThousands);</td></tr>
+<tr><td nowrap>C</td><td nowrap>用FileStream 打开一个文件时，可用FileShare 参数控制_______：<br>A. 对文件执行覆盖、创建、打开等选项中的哪些操作；|B. 对文件进行只读、只写还是读/写|C. 其他FileStream 对同一个文件所具有的访问类型|D. 对文件进行随机访问时的定位参考点</td></tr>
+<tr><td nowrap>B</td><td nowrap>为了判断线程t1 是否是在后台运行，需访问t1 的______属性。<br>A. CurrentThread|B. IsBackgroud|C. IsAlive|D. ThreadState</td></tr>
+<tr><td nowrap>C</td><td nowrap>假设变量x的值为25，要输出x的值，下列正确的语句是____。<br>A. System.Console.writeline(“x”)|B. System.Console.WriteLine(“x”)|C. System.Console.WriteLine(“x={0}”, x)|D. System.Console.WriteLine(“x={x}”)</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于C#程序的书写，下列不正确的说法是____。<br>A. 区分大小写|B. 一行可以写多条语句|C. 一条语句可写成多行|D. 一个类中只能有一个Main()方法，因此多个类中可以有多个Main()方法</td></tr>
+<tr><td nowrap>C</td><td nowrap>在C#语言中，下列能够作为变量名的是____。<br>A. if|B. 3ab|C. a_3b|D. a-bc</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#语言中，下面的运算符中，优先级最高的是____。<br>A. %|B. ++|C. /=|D. &gt;&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>能正确表示逻辑关系“a &gt;= 10 或a &lt;= 0”的C#语言表达式是____。<br>A. a &gt;= 10 or a &lt;= 0|B. a &gt;= 10 | a &lt;= 0|C. a &gt;= 10 && a &lt;= 0|D. a &gt;= 10 || a &lt;= 0</td></tr>
+<tr><td nowrap>B</td><td nowrap>if语句后面的表达式应该是____。<br>A. 逻辑表达式|B. 条件表达式|C. 算术表达式|D. 任意表达式</td></tr>
+<tr><td nowrap>A</td><td nowrap>以下关于for循环的说法不正确的是____。<br>A. for循环只能用于循环次数已经确定的情况|B. for循环是先判定表达式，后执行循环体语句|C. for循环体语句中，可以用break语句跳出循环体|D. for循环体语句中，可以包含多条语句，但要用花括号括起来</td></tr>
+<tr><td nowrap>C</td><td nowrap>以下程序的输出结果是：\r\nclass Example1\r\n{\r\npublic static void Main()\r\n{\r\nint i;\r\nint [] a = new int [10];\r\nfor( i = 9; i &gt;= 0; i--)\r\na[i] = 10 - i;\r\nConsole.WriteLine(“{0}, {1}, {2}”, a[2], a[5], a[8]);\r\n}\r\n}<br>A. 2 5 8|B. 7 4 1|C. 8 5 2|D. 3 6 9</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列程序的输出结果是：\r\nusing System;\r\nclass Example1\r\n{\r\nstatic long fib(int n)\r\n{\r\nif (n &gt; 2)\r\nreturn (fib(n-1) + fib(n-2));\r\nelse\r\nrerurn(2);\r\n}\r\npublic static void Main()\r\n{\r\nConsole.WriteLine(“{0}”, fib(3));\r\n}\r\n}<br>A.2|B.4|C.6|D.8</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列程序的输出结果是____。\r\nusing System;\r\nclass Example1\r\n{\r\nstatic long sub(int x, int y)\r\n{\r\nint z;\r\nz = x * x + y * y;\r\nreturn z;\r\n}\r\npublic static void Main()\r\n{\r\nint a = 30;\r\nsub(5, 2);\r\nConsole.WriteLine(“{0}”, a);\r\n}\r\n}<br>A. 0|B. 29|C. 30|D. 无定值</td></tr>
+<tr><td nowrap>B</td><td nowrap>类ClassA有一个名为M1的方法，在程序中有如下一段代码，假设该段代码是可以执行的，则修饰M1方法时一定使用了________修饰符。\r\nClassA obj = new ClassA();\r\nClassA.M1();<br>A. public|B. static|C. private|D. virtual</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列关于try…catch…finaly语句的说明中，不正确的是_________。<br>A. catch块可以有多个|B. finally块是可选的|C. catch块也是可选的|D. 可以只有try块</td></tr>
+<tr><td nowrap>BE</td><td nowrap>假设给出下面代码：\r\ntry\r\n{\r\nthrow new OverflowException();\r\n}\r\ncatch (FileNotFoundException e)\r\n{\r\n}\r\ncatch (OverflowException e)\r\n{\r\n}\r\ncatch (SystemException e)\r\n{\r\n}\r\ncatch\r\n{\r\n}\r\nfinally\r\n{\r\n}\r\n则下面哪些语句会得到执行____。<br>A. catch (OverflowException e) {}|B. catch (OverflowException e) {}|C. catch (SystemException e) {}|D. catch {}|E. finally {}</td></tr>
+<tr><td nowrap>B</td><td nowrap>不能指定接口中方法的修饰符。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>DotNet包含两个部分，即公共语言运行时和框架类库<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在同一行上可以书写多条语句，每条语句间用分号分隔。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在数据类型转化时，只能通过类型转换关键字或Convert类实现。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在定义数组时不允许为数组中的元素赋值。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>定义枚举时至少为其中的一个枚举成员赋值。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>接口与类同样是面向对象程序设计的核心，是创建对象的模版。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>委托是将方法作为参数传递给另一方法的一种数据类型。事件与委托没有\r\n关系。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#类中，this代表了当前类本身。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>用Interval属性设置Timer控件Tick事件发生的时间间隔单位为秒。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>设置图片框控件的SizeMode属性为StretchImage时，图片可以按图片框\r\n的大小比例缩放显示。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>可以重写私有的虚方法。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#中，所有类都是直接或间接地继承System.Object类而得来的。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>使用Directory类的Move()方法可以删除文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>使用FileInfo类的Copy()方法可以复制文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>DataSet对象中的表可以和数据库中的表同名，也可以不同名。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>Command对象可以执行SQL语句。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>注释的作用是使程序在执行时在屏幕上显示//之后的内容。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#语言中的数组元素下标总是从0开始，下标可以是整数或整型表达式。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>无论C#源程序包含几个类的定义，都可用同一个源程序文件以B.cs命名<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>即使一个类中未显式定义构造函数，也会有一个缺省的构造函数，缺省的构造函数是无参的，函数体为空。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#的方法中定义一个常量要用const关键字。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#的类不允许多重继承，但接口支持多重继承。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>所谓抽象类就是包含有抽象方法的类。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在异常处理中总是将可能产生异常的语句放在try块中，用catch子句\r\n去处理异常，而且一个try块之后只能对应一个catch语句。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>程序员可以不必释放已创建的对象，因为C#有垃圾回收机制，内存回收\r\n程序可在指定的时间释放内存对象。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>C#语言中的数组元素只能是基本数据类型而不能为对象类型。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>程序中抛出异常时(throw ?)，只能抛出自己定义的异常对象。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>实现一个接口，则在类中一定要实现接口中的所有方法。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>所有的文件输入/输出流都在System.write和System.read中。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>设置图片框控件的SizeMode属性为StretchImage时，图片可以按图片框的大小比例缩放显示。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>可以重写私有的虚方法。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#中，所有类都是直接或间接地继承System.Object类而得来的。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#中，任何方法都不能实现多继承。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>菜单项标题中有含有带下划线的字符，这是快捷键。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>接口与类同样是面向对象程序设计的核心，是创建对象的模版。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>如果要对System.Web.UI.WebControls.Label类的一个对象设置它的背景颜色，需要设置它的哪一个属性（ ）  <br>A.Anchor|B.BackColor|C.Capture|D.Text</td></tr>
+<tr><td nowrap>B</td><td nowrap>在创建超级链接时需要把一个网址设置给超级链接控件的______属性。<br>A.TARGET|B.NAVIGATEURL|C.SITE|D.IMAGEURL</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪个类的对象是用来建立数据库连接的（ ）  <br>A.System.Data.DataSet|B.System.Data.SqlClient.SqlConnection|C.System.Data.SqlClient.SqlCommand|D.System.Data.SqlClient.SqlDataAdapter</td></tr>
+<tr><td nowrap>C</td><td nowrap>DataSet类的对象是哪个类的对象的集合( )  <br>A.DataColumn|B.DataRow|C.DataTable|D.DataSet</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪个验证控件用于强制用户必须输入某一范围内的信息（）?。  <br>A.RequiredFieldValidator；|B.RangeValidator；|C.RegularExpressionValidator；|D.CustomValidator；</td></tr>
+<tr><td nowrap>A</td><td nowrap>要连接SQLSERVER数据库需要引用<br>A.SYSTEM.DATA.SQLCLIENT|B.SYSTEM.DATA.SQLTYPES|C.SYSTEM.DATA.OLEDB|D.SYSTEM.DATA.OLEDB.SQLCLIENT</td></tr>
+<tr><td nowrap>C</td><td nowrap>在ASP.NET中有Button控件myButton，要是单击控件时，导航到其他页面http://www.abc.com, 正确的代码为( )。<br>A.private void myButton_Click(object sender, System.EventArgs e){Redirect(“http://www.abc.com”);|B.private void myButton_Click(object sender, System.EventArgs e){Request.Redirect(“http://www.abc.com”);|C.private void myButton_Click(object sender, System.E</td></tr>
+<tr><td nowrap>D</td><td nowrap>Application对象的有效期是?  <br>A.20分钟|B.20秒钟|C.10分钟|D.从应用程序启动到结束</td></tr>
+<tr><td nowrap>A</td><td nowrap>在对SQL Server 数据库操作时应选用（）。<br>A.SQL Server .NET Framework 数据提供程序；|B.OLE DB .NET Framework 数据提供程序；|C.ODBC .NET Framework 数据提供程序；|D.Oracle .NET Framework数据提供程序；</td></tr>
+<tr><td nowrap>B</td><td nowrap>ASP.NET中用户控件的扩展名通常为?（ ）<br>A..aspx|B..ascx|C..asax|D..resx</td></tr>
+<tr><td nowrap>C</td><td nowrap>在ASP.NET中，要验证输入的银行信誉卡卡号是否符合规定，需要使用（ ）验证控件?  <br>A.CustomValidator|B.RangeValidator|C.RegularExpressionValidator|D.Compare Validator</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#的数据类型有（）<br>A.值类型和调用类型|B.值类型和引用类型|C.引用类型和关系类型|D.关系类型和调用类型</td></tr>
+<tr><td nowrap>B</td><td nowrap>SERVER.MAPPATH(&quot;&quot;.&quot;&quot;)返回<br>A.出错|B.网站根目录|C.程序当前目录|D.操作系统的根目录</td></tr>
+<tr><td nowrap>C</td><td nowrap>想实现设为首页，加入收藏的效果，重点用到（）技术。  <br>A.ASP.NET技术；|B.C#技术；|C.javascript技术；|D.CSS技术；</td></tr>
+<tr><td nowrap>A</td><td nowrap>如果我们需要得到Select count(*) from tb的结果通常会使用SqlCommand的哪个方法?（ ）<br>A.ExecuteNonQuery()|B.ExecuteReader()|C.ExecuteScalar()|D.ExecuteXmlReader()</td></tr>
+<tr><td nowrap>A</td><td nowrap>ASP.NET框架中，服务器控件是为配合Web表单工作而专门设计的。服务器控件有两种类型，它们是( )<br>A.HTML控件和Web控件|B.HTML控件和XML控件|C.XML控件和Web控件|D.HTML控件和IIS控件</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列选项中，（）是引用类型。<br>A.enum类型|B.struct类型|C.string类型|D.int类型</td></tr>
+<tr><td nowrap>B</td><td nowrap>要想在日历控件中能同时选择多个日期应该设置的属性是<br>A.SELECTEDDATE|B.SELECTIONMODE|C.SELECTORSTYLE|D.SELECTIONCHANGED</td></tr>
+<tr><td nowrap>D</td><td nowrap>如果想自己定制一下验证规则，以代码的方式约束一下用户的输入，需要用到（）?  <br>A.RequiredFieldValidator；|B.RangeValidator；|C.RegularExpressionValidator；|D.CustomValidator；</td></tr>
+<tr><td nowrap>C</td><td nowrap>要想设置字号，需要用到哪个样式?  <br>A.font-family|B.font-face|C.font-size|D.a:link</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪个变量的类型是字符串型（ ）  <br>A.int a|B.string a|C.float a|D.char a</td></tr>
+<tr><td nowrap>C</td><td nowrap>在连接ACCESS数据库的COMMANDTEXT中应该包括的内容有<br>A.PROVIDER|B.SERVER|C.DATABASE|D.DATA SOURCE</td></tr>
+<tr><td nowrap>C</td><td nowrap>下面哪个是用户控件的扩展名?<br>A.aspx|B.asmx|C.ascx|D.asax</td></tr>
+<tr><td nowrap>D</td><td nowrap>ASP.NET中，在Web窗体页上注册一个用户控件，指定该控件的名称为”Mike”，正确的注册指令为( )<br>A.&lt;%@Register TagPrefix = “Mike” TagName = “Space2” Src = “myX.ascx”%&gt;|B.&lt;%@Register TagPrefix = “Space2” TagName = “Mike” Src = “myX.ascx”%&gt;|C.&lt;%@Register TagPrefix = “SpaceX” TagName = “Space2” Src = “Mike”%&gt;|D.以上皆非</td></tr>
+<tr><td nowrap>A</td><td nowrap>要将一个数字888转换为字符串，可以使用（ ）?  <br>A.888.ToString( )|B.CString(888)|C.Integer.ParseInt(888)|D.Double.Parse(888)</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列选项中，（）不属于.NET公共语言运行库的功能或特点。<br>A.类库加载|B.垃圾收集|C.多语言支持|D.统一的API</td></tr>
+<tr><td nowrap>D</td><td nowrap>CSS文件中的注释是（）?  <br>A.&lt;-- --&gt;|B.//|C.///|D./* */</td></tr>
+<tr><td nowrap>B</td><td nowrap>某电子商务网站在设计会员注册界面时候，必须保证年龄不要求超过100。需要用什么验证控件?<br>A.RuiredFieldValidator控件|B.RuiredFieldValidator控件, RangeValidator控件。|C.RangeValidator|D.CompareValidator</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列哪个验证控件用于强制用户输入的信息必须满足一定的格式（）?。  <br>A.RequiredFieldValidator；|B.RangeValidator；|C.RegularExpressionValidator；|D.CustomValidator；</td></tr>
+<tr><td nowrap>B</td><td nowrap>一个HTML文档必须包含三个元素，它们是head、html和（ ）。<br>A.script|B.body|C.title|D.link</td></tr>
+<tr><td nowrap>B</td><td nowrap>在.NET程序设计中，语句Console.ReadLine( )的作用是（ ）?  <br>A.将程序暂停，直到用户输入回车|B.阅读用户输入|C.将内容输出到屏幕|D.读取网络中的数据流</td></tr>
+<tr><td nowrap>D</td><td nowrap>文件上传组件的PostedFile.FileName属性表示的是（ ）  <br>A.服务器端文件的物理路径|B.客户端文件的物理路径|C.服务器端文件的名称|D.客户端文件的名称（带路径）</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列哪个选项不属于样式表的选择器种类?  <br>A.类选择器|B.ID选择器|C.HTML选择器|D.生成选择器</td></tr>
+<tr><td nowrap>C</td><td nowrap>通过用户指定的SQL语句从数据库中获取数据，并填充一个数据集，可使用哪个类的对象的哪个方法（ ）  <br>A.System.Data.SqlClient.SqlCommand类 ExecuteNonQuery()方法|B.System.Data.SqlClient.SqlCommand类 ExecuteScalar()方法|C.System.Data.SqlClient.SqlDataAdapter类 Fill()方法|D.System.Data.SqlClient.SqlDataAdapter类 Update()方法</td></tr>
+<tr><td nowrap>D</td><td nowrap>在下列选项中，不属于.NET平台的核心技术的是（ ）  <br>A.NET Framework|B.NET企业级服务器|C.Visual Studio.NET|D.ADO数据连结</td></tr>
+<tr><td nowrap>D</td><td nowrap>要想让文字滚动起来，需要用到哪个标记?  <br>A.meta|B.body|C.table|D.marquee</td></tr>
+<tr><td nowrap>D</td><td nowrap>在javascript，定义一个整型变量a，下列语法正确的是（）?  <br>A.int a；|B.Int a；|C.var a=\'0\'；|D.var a；</td></tr>
+<tr><td nowrap>B</td><td nowrap>语句int i=0；object box=I;称为（ ）?  <br>A.拆箱|B.装箱|C.委托|D.回调</td></tr>
+<tr><td nowrap>A</td><td nowrap>Session对象的有效期是多少?  <br>A.20分钟|B.20秒钟|C.10分钟|D.从应用程序启动到结束</td></tr>
+<tr><td nowrap>C</td><td nowrap>在下列指令中，用于在ASP.NET页面中使用用户控件的指令是（ ）?  <br>A.&lt;%Page%&gt;|B.&lt;%@Control%&gt;|C.&lt;%Register%&gt;|D.&lt;%OutPutCache%&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>在.NET中，与Java的虚拟机（JVM）相类似的重要组件是（ ）?  <br>A.CLS|B.CTS|C.CLR|D.BCL</td></tr>
+<tr><td nowrap>C</td><td nowrap>______控件用于在页面上保留一个位置,以便运行时在该位置动态放置其它的控件。<br>A.CALENDAR|B.PANEL|C.PLACEHOLDER|D.TABLE</td></tr>
+<tr><td nowrap>C</td><td nowrap>若要求用户必须输入合法的电子信箱地址,应该添加______验证控件<br>A.REQUIREDFIELDVALIDATOR|B.COMPAREVALIDATOR|C.REGULAREXPRESSIONVALIDATOR|D.RANGEVALIDATOR</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>面向对象的语言具有________性、_________性、________性<br>A.封装|B.继承|C.多态|D.方便</td></tr>
+<tr><td nowrap>A</td><td nowrap>GridView控件可以在一行里面显示多条记录，是一种非常灵活的复杂绑定控件。  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#中，int[][]是定义一个int型的二维数组  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>{在Visual Studio.Net开发环境中，在代码编辑器内输入对象的名称后将自动显示起对应的属性、方法、事件列表，以方便选择和避免书写A.错误，这种技术被称之为协助编码。  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>CheckBoxList和ListBox控件类似。都可以进行单选或多选，甚至一项都不选。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在一个购物车的ASP.NET应用程序中，若使用以下的代码来存储当前会话的口令信息：Session[&quot;pp&quot;]=txtPwd.Text;则该代码在执行时将报告A.错误信息，应该使用Session[&quot;Password&quot;]来进行标识。  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在.Net中，类System.Web.UI.Page 可以被继承<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>ASP.NET中，使用验证控件来验证用户输入，要求用户不可跳过该项输入，并且用户输入值在0和1000之间，则适用RequiredFieldValidator和RangeValidator控件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>用户控件可以提高软件的复用性，但是由一个缺点，不能与宿主（使用该用户控件的页）进行信息交互。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>RadioButtonList控件和ListBox控件类似，都可以在一组选项中选出一项来，但是不允许同时选择多项。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#中，接口可以被多重继承而类不能。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>D</td><td nowrap>以下哪个数据库实例不属于系统数据库（ ）。<br>A．Master|B．Model|C．Msdb|D．Temp</td></tr>
+<tr><td nowrap>D</td><td nowrap>利用游标来操纵数据时，所用的FOR UPDATE子句充分利用了事务的哪个特性（ ）。<br>A．原子性|B．一致性|C．永久性|D．隔离性</td></tr>
+<tr><td nowrap>B</td><td nowrap>关于触发器的描述，下列说法正确的是（ ）。<br>A．触发器是在数据修改前被触发，约束是在数据修改后被触发|B．触发器是一个能自动执行的特殊的存储过程|C．触发器作为一个独立的对象存在，与数据库中其他对象无关|D．inserted表和deleted表是数据库中的物理表</td></tr>
+<tr><td nowrap>A</td><td nowrap>关于服务器角色与数据库角色，说法正确的是（ ）。<br>A．只能将一个登录名添加为某个固定服务器角色的成员|B．只能将一个登录名添加为某个固定数据库角色的成员|C．sysadmin是固定数据库角色|D．db_owner是固定服务器角色</td></tr>
+<tr><td nowrap>A</td><td nowrap>游标的处理步骤的第二步是（ ）。<br>A．打开游标|B．定义游标|C．关闭游标|D．取值到变量</td></tr>
+<tr><td nowrap>D</td><td nowrap>在定义存储过程时，下面说法不正确的是（ ）。<br>A．不要以sp_为前缀创建任何存储过程，因为sp_前缀是SQL Server用来命名系统存储过程的|B. 如果定义了默认值，执行存储过程时可以不提供实参|C. VARYING用于指定作为输出参数支持的结果集，且仅适用于定义cursor输出参数|D. OUTPUT关键词用于指定参数为输入参数类型</td></tr>
+<tr><td nowrap>A</td><td nowrap>下面关于数据操纵语句，说法错误的是（ ）。<br>A．使用Insert语句一次只能插入一行数据|B．使用Insert语句一次可以插入多行数据|C．使用Update语句一次可以更新多行数据|D．使用Delete语句一次可以删除多行数据</td></tr>
+<tr><td nowrap>C</td><td nowrap>关于T-SQL语言，以下说法正确的是（ ）。<br>A．T-SQL语言能用于Oracle数据库|B．SQL Server数据库可以使用PL/SQL语言|C．T-SQL语言提供了流程控制功能|D．T-SQL语言并不提供标准的SQL命令</td></tr>
+<tr><td nowrap>D</td><td nowrap>SQL Server可以识别的日期常量，格式错误的是（ ）。<br>A．’October 15,2013?|B．’10/15/2013’|C．’2013-10-15’|D．’2013:10:15?</td></tr>
+<tr><td nowrap>C</td><td nowrap>假设表中没有数据，下列语句中能够正确执行的是（ ）。<br>A．alter table student drop age|B．alter table student add column memo|C．alter table student drop column age|D．alter table student add memo</td></tr>
+<tr><td nowrap>C</td><td nowrap>在数据库系统中，视图可以提供数据的（ ）。<br>A．完整性|B．并发性|C．安全性|D．可恢复性</td></tr>
+<tr><td nowrap>D</td><td nowrap>SQL Server服务的启动模式默认为（ ）。<br>A．恢复|B．手动|C．已禁用|D．自动</td></tr>
+<tr><td nowrap>D</td><td nowrap>在SQL Server中所使用的文件分为三大类，其中不包括哪个选项（ ）。<br>A．辅助数据文件|B．日志文件|C．主数据文件|D．逻辑文件</td></tr>
+<tr><td nowrap>A</td><td nowrap>查询course表中的前5行，正确的语法是（ ）。<br>A．select top 5 * from course|B．select top(5) from course|C．select top 5 from course|D．select top(5*) from course</td></tr>
+<tr><td nowrap>A</td><td nowrap>在SQL server中以下哪个命令可以用来对指定数据库进行备份（ ）。<br>A．BACKUP|B．REBACK|C．REVOKE|D．RESTORE</td></tr>
+<tr><td nowrap>D</td><td nowrap>定义一个名为t_cur的游标，一个名为@t_cur的游标类型变量，下列语句正确的是（ ）。<br>A．set t_cur=@t_cur|B．fetch next from t_cur into @t_cur|C．select t_cur into @t_cur|D．set @t_cur=t_cur</td></tr>
+<tr><td nowrap>B</td><td nowrap>SQL Server有两种身份验证模式（ ）。<br>A．Windows身份验证模式、sa身份验证模式|B．Windows身份验证模式、SQL Server身份验证模式|C．SQL Server身份验证模式、sa身份验证模式|D．以上选项均不正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>关于触发器叙述错误的是（ ）。<br>A．触发器是不需要调用的，当触发事件发生时它就会被激活|B．触发器不可以同步数据库的相关表进行级联更改|C．当触发器的功能与表的约束条件发生冲突时，触发器将被停止|D．触发器是一类特殊的存储过程</td></tr>
+<tr><td nowrap>C</td><td nowrap>SQL Server是基于哪种模型的数据库管理系统（ ）。<br>A．层次模型|B．网状模型|C．关系模型|D．面向对象模型</td></tr>
+<tr><td nowrap>D</td><td nowrap>在SQL Server数据库中修改表的某一属性数据类型的命令，正确的是（<br>A．alter table 表名 modify 属性 新数据类型|B．alter table 表名 modify column属性 新数据类型|C．alter table 表名 alter 属性 新数据类型|D．alter table 表名 alter column 属性 新数据类型</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下哪个选项不是SQL Server支持的用户自定义函数（ ）。<br>A．标量函数|B．矢量函数|C．内嵌表值函数|D．多语句表值函数</td></tr>
+<tr><td nowrap>A</td><td nowrap>创建用户自定数据类型，使用哪个系统定义的存储过程（ ）。<br>A．sp_addtype|B．sp_type|C．type|D．addtype</td></tr>
+<tr><td nowrap>A</td><td nowrap>下面关于触发器的描述正确的是（ ）。<br>A．TRUCATE TALBE语句虽然能够删除表记录，但它不会触发DELETE触发器|B．DML触发器中可以包含CREATE DATABASE、ALTER DATABASE或DROP DATABASE语句|C．只有执行UPDATA语句时UPDATE()函数的返回值为真|D．触发器只能作用在表上，不能作用在数据库或服务器上</td></tr>
+<tr><td nowrap>C</td><td nowrap>以下关于不相关子查询说法正确的是（ ）。<br>A．不相关子查询的执行顺序是：先执行父查询后执行子查询|B．子查询不能单独执行，必须依赖于父查询|C．子查询只执行一次|D．不相关子查询可以使用谓词EXISTS</td></tr>
+<tr><td nowrap>D</td><td nowrap>对于标量函数的调用方法，下面哪一项是正确的（ ）。<br>A．exec dbo.getname(\'05880103\')|B．select getname(\'05880103\')|C．select * from dbo.getname(\'05880103\')|D．print \'姓名为：\'+ltrim(dbo.getname(\'05880103\'))</td></tr>
+<tr><td nowrap>C</td><td nowrap>关于AFTER触发器和INSTEAD OF触发器说法正确的是（ ）。<br>A．AFTER触发器和INSTEAD OF触发器既执行触发器内的语句又执行触发事件|B．AFTER触发器只执行触发器内的语句不执行触发事件|C．INSTEAD OF触发器只执行触发器内的语句不执行触发事件|D．AFTER触发器和INSTEAD OF触发器只执行触发器内的语句不执行触发事件</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于权限，说法错误的是（ ）。<br>A．被授权者将获得的权限授予其他用户，需要在执行授权语句时加with grant option|B．授予数据库级权限时，只能在master数据库中授权|C．授予权限时，ALL表示授予所有可用的对象权限|D．对public角色授权，相当于对数据库中所有用户授权</td></tr>
+<tr><td nowrap>B</td><td nowrap>表t1有10行数据，使用select语句查询@@cursor_rows的结果分别是（ ）。 Declare t_cur cursor for select * from t1\r\nSelect @@cursor_rows\r\nOpen t_cur\r\nSelect @@cursor_rows\r\nClose t_cur\r\nDeallocate t_cur<br>A．0和10 B．10和10|C．0和-1 D．-1和-1</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下关于变量定义，写法正确的是（ ）。<br>A．declare @x,@y int|B．declare @x int,@y int|C．declare int @x,@y|D．declare int @x,int @y</td></tr>
+<tr><td nowrap>D</td><td nowrap>对于用户自定义函数的参数和返回值描述不正确的是（ ）。<br>A．函数的形式参数的数据类型要写在参数名的后面|B．函数的形式参数不能为空|C．函数的返回值类型必须使用returns定义|D．函数的返回值可以为空</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下哪个选项不属于数据库的逻辑对象（ ）。<br>A．表|B．属性|C．存储过程|D．触发器</td></tr>
+<tr><td nowrap>C</td><td nowrap>对SQL Server数据库权限的管理有三种操作，以下哪个是错误的（<br>A．REVOKE|B．GRANT|C．STOP|D．DENY</td></tr>
+<tr><td nowrap>C</td><td nowrap>以下哪种情况，@@fetch_status全局变量的取值为-2（ ）。<br>A．fetch语句执行成功|B．fetch语句执行失败|C．被读取的记录不存在|D．被读取的记录存在</td></tr>
+<tr><td nowrap>A</td><td nowrap>SQL Server使用的图形界面管理工具是（ ）。<br>A．SQL Server Management Studio|B．SQL Server Configuration Manager|C．Analysis Services|D．Notification Services</td></tr>
+<tr><td nowrap>C</td><td nowrap>通过游标对表进行删除或者更新操作时，WHERE CURRENT OF的作用是（ ）。<br>A．为了提交请求|B．释放游标当前的操作记录|C．允许更新或删除当前游标的记录|D．锁定游标当前的操作记录</td></tr>
+<tr><td nowrap>C</td><td nowrap>调用标量函数时，至少应使用（ ）和函数名。<br>A．服务器名|B．数据库名|C．数据库架构名|D．用户名</td></tr>
+<tr><td nowrap>D</td><td nowrap>以下关于触发器的说法正确的是（ ）。<br>A．在数据库创建新表时可自动激活DML触发器|B．触发器能够接收参数|C．可以使用触发器的名称来调用执行触发器|D．可以通过使用触发器帮助保证数据的完整性和一致性</td></tr>
+<tr><td nowrap>B</td><td nowrap>若表中某个属性的值为NULL，则表示该数据值是（ ）。<br>A．空字符|B．无任何数据|C．空隔|D．0</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列聚合函数用法正确的是（ ）。<br>A．SUM(*)|B．COUNT(*)|C．MAX(*)|D．AVG(*)</td></tr>
+<tr><td nowrap>C</td><td nowrap>关于EXISTS谓词的使用，错误的是（ ）。<br>A．EXISTS谓词返回的结果为TRUE或FALSE|B．由EXISTS引出的子查询，select语句后一般不写具体的属性列，而使用*|C．EXISTS既可以用在相关子查询中，又可以用在不相关子查询中|D．NOT EXISTS与EXISTS返回的结果相反</td></tr>
+<tr><td nowrap>D</td><td nowrap>在游标的WHILE循环中，下列哪个值为0时，可以继续执行循环（ ）。<br>A．@@cursor_rows|B．@@errors|C．@@connections|D．@@fetch_status</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于用户自定义函数，以下说法错误的是（ ）。<br>A．多语句表值函数可以看作是标量型和内嵌表值型函数的结合体|B．内嵌表值函数的返回值类型为表|C．表值函数在调用时可以只使用函数名|D．标量函数的返回值类型为表</td></tr>
+<tr><td nowrap>A</td><td nowrap>定义一个存储过程查询某学生某门课程的成绩和学分，存储过程的首部如下形式：\r\nCreate Procedure student_info @name char(8),@kc_name char(16) 则下列执行方式中，正确的是（ ）。<br>A. Execute student_info ‘李明’，’操作系统’|B. Exec student_info (’操作系统’,‘李明’)|C. Exec student_info 李明,操作系统|D. Execute student_info ’操作系统’,‘李明’</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于创建永久备份设备，下列说法错误的是（ ）。<br>A．执行系统存储过程sp_addumpdevice创建永久备份设备|B．执行系统存储过程sp_dropdevice删除永久备份设备|C．若被删除的“命名备份设备”的类型为磁盘，那么必须指定DELFILE选项|D．只须指定该命名备份设备的物理名，无须指定该命名备份设备的逻辑名</td></tr>
+<tr><td nowrap>A</td><td nowrap>为变量赋值的写法，错误的是（ ）。<br>A．set @a=3,@b=4|B．select @a=3,@b=4|C．set @a=3;set @b=4|D．select @a=3;select @b=4</td></tr>
+<tr><td nowrap>D</td><td nowrap>通过游标操纵数据库，以下说法错误的是（ ）。<br>A．在定义游标的查询语句时，必须加上FOR UPDATE从句|B．使用FOR UPDATE从句没有加OF表示通过游标可以修改表中的任何一列|C．FOR UPDATE OF age 表示通过游标只能对age属性进行修改|D．使用FOR UPDATE从句表示只能通过游标更新表数据，而不能删除表数据</td></tr>
+<tr><td nowrap>A</td><td nowrap>在查询表数据时，为列定义别名，以下选项正确的是（ ）。<br>A．select sno 学号 from student|B．select 学号=sno from student|C．select 学号 as sno from student|D．select sno=学号 from student</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于SQL Server语法规则，下面说法正确的是（ ）。<br>A．关键字必须为大写|B．一条语句结束后必须加“；”|C．语句的执行必须使用GO命令|D．每一个数据库对象都必须有一个唯一的完全限定名</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列说法错误的是（ ）。<br>A．内嵌表值函数没有函数主体，返回的表是单个SELECT语句的结果集|B．多语句表值函数的调用与内嵌表值函数的调用方法相同|C．多语句表值函数的功能可以用标量函数来实现|D．在内嵌表值函数的定义中，不使用BEGIN?END块定义函数主体</td></tr>
+<tr><td nowrap>B</td><td nowrap>在SQL Server中不能定义一个触发器同时为（ ）。<br>A. INSERT和DELETE触发器|B. INSTEAD OF和AFTER触发器|C. INSERT和UPDATE触发器|D. DELETE和UPDATE触发器</td></tr>
+<tr><td nowrap>C</td><td nowrap>表t1有10行数据，使用select语句查询@@cursor_rows的结果分别是\r\n（ ）。\r\nDeclare t_cur cursor for select * from t1\r\nSelect @@cursor_rows\r\nOpen t_cur\r\nSelect @@cursor_rows\r\nClose t_cur\r\nDeallocate t_cur<br>A．0和10|B．10和10|C．0和-1|D．-1和-1</td></tr>
+<tr><td nowrap>D</td><td nowrap>在游标的WHILE循环中，下列哪个值为0时，可以继续执行循环（ ）。<br>A．@@cursor_rows|B．@@errors|C．@@connections|D．@@fetch_status</td></tr>
+<tr><td nowrap>B</td><td nowrap>要删除一个名为A1的存储过程，应用使用命令（ ）。<br>A．delete procedure A1|B. drop procedure A1|C. alter procedure A1|D. execute C procedure A1</td></tr>
+<tr><td nowrap>B</td><td nowrap>当表中的某一属性列被设置了主键约束，则该属性列也同时具有如下约束（ ）。<br>A．check约束和unique约束|B．unique约束和not null约束|C．check约束和not null约束|D．以上选项均错误</td></tr>
+<tr><td nowrap>C</td><td nowrap>使用界面对表中数据进行增、删、改操作时，点击相应表右键的哪个选项（ ）。<br>A．编辑|B．设计|C．打开表|D．以上均错误</td></tr>
+<tr><td nowrap>C</td><td nowrap>能够将‘java’课的学分赋值给变量的语句是哪一个（ ）。<br>A．select credit into @credit from course where cname=‘java’|B．select credit=@credit from course where cname=‘java’|C．select @credit= credit from course where cname=‘java’|D．select credit from course where cname=‘java’and credit=@credit</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于T-SQL语言中的CASE语句，以下说法正确的是（ ）。<br>A．then关键字后面可以使用insert、update和delete语句|B．then关键字后面可以使用print语句|C．case关键字后面不能有任何的表达式|D．case语句中else关键字可以省略</td></tr>
+<tr><td nowrap>B</td><td nowrap>在删除表时，主表与从表删除的顺序为（ ）。<br>A．先删除主表，再删除从表|B．先删除从表，再删除主表|C．先删除哪一个表都可以|D．只有先删除表之间的约束，才能删除表</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下可以用来对触发器的文本内容进行加密的语句是（ ）。<br>A. WITH CHECK OPTION|B. WITH ENCRYPTION|C. DBCC SHOWCONTIG|D. WITH FILLFACTOR</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下有关TRUNCATE TABLE命令说法正确的是（ ）。<br>A．TRUNCATE TABLE相当于DROP TABLE|B．TRUNCATE TABLE相当于无条件的DELETE FROM|C．TRUNCATE TABLE是删除表数据以及表结构|D．TRUNCATE TABLE可以有选择性的截断表中的数据</td></tr>
+<tr><td nowrap>B</td><td nowrap>对于下面的存储过程： \r\nCREATE   PROCEDURE   Myp1\r\n@ p   Int \r\n As    \r\nselect   Student.name,Age\r\n  from   Students\r\n  where   Age＝@p\r\n假如你要在Students表中查找年龄是20岁的学生，（）可以正确的调用这个存储过程。 <br>A. EXEC   Myp1   @p=‘20’|B.EXEC   Myp1   @p=20|C.EXEC   Myp1=’20’|D.EXEC   Myp1=20</td></tr>
+<tr><td nowrap>B</td><td nowrap>当登录到WINDOWS的用户与SQL Server联接时，用户不用提供SQL Server帐号，这种认证模式就是WINDOWS认证机制。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>可以在企业管理器中修改数据库的名称。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>通配符“_”表示某单个字符。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>一个表上只能建立一个聚集索引。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>SQL sever 在进行数据操作时，总是先写数据库，然后记录日志。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>恢复数据，可以在查询分析器中使用这样的命令：BACKUP DATABASE database_name FROM backup<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>如果使用别名来代表一个表，那么在定义别名后的所有查询语句中，都必须使用别名来代表表的全名，否则系统会出错<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在查询语句中系统最先执行的操作是搜索当前系统查询所使用的表，所以最先执行的语句是 FROM 子句 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>当用户删除一个表（DROP TABLE）后，建立在该表上的视图不存在了。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>用户要删除视图时，必须隐式的使用DROP VIEW 命令。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在查询中很少被引用的列上创建索引可以极大的提高查询性能。 <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>一个数据库文件不能存在于两个或两个以上的文件组里，日志文件不属于任何文件组。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>DELETE语句只是删除表中的数据，表本身依然存在数据库中。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在数据库中建立的索引越多越好。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在SQL SERVER中，触发器的执行是在数据的插入.更新或删除之前执行的。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>并发性就是两个或两个以上的用户同时对数据执行的操作。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>如果安装的是SQL server2000企业版，那么至少要求64M内存。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>C</td><td nowrap>一个文件夹名称叫Parent，其下有一个叫做test.asp的文件，和一个名为Child的文件夹。Child下有一个名为default.htm文件，想在default.htm中作一个连接，链到test.asp。以下正确的是：<br>A.&lt;a href=“/test.asp”&gt;…&lt;/a&gt;|B.&lt;a href=“c:/test.asp”&gt;…&lt;/a&gt;|C.&lt;a href=“‥/test.asp”&gt;…&lt;/a&gt;|D.&lt;a href=“Parent/test.asp”&gt;…&lt;/a&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列那项技术可以用于帮助网页设计时使页面具有统一、专业的外观?<br>A.HTML|B.DHTML|C.CSS|D.URL</td></tr>
+<tr><td nowrap>C</td><td nowrap>在页面中看不见的表单元素是那种?<br>A.&lt;inputtype=&quot;password&quot;&gt;&lt;/input&gt;|B.&lt;inputtype=&quot;radio&quot;&gt;&lt;/input&gt;|C.&lt;inputtype=&quot;hidden&quot;&gt;&lt;/input&gt;|D.&lt;inputtype=&quot;reset&quot;&gt;&lt;/input&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下哪一个项目是用来访问web页的软件?<br>A.OutlookExpress|B.Internet Explorer|C.QQ|D.FTP</td></tr>
+<tr><td nowrap>B</td><td nowrap>哪条命令用于使一行文本折行，而不是插入一个新的段落?<br>A.&lt;TD&gt;|B.&lt;BR&gt;|C.&lt;P&gt;|D.&lt;H1&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>世界上最大的计算机网络是：<br>A.WWW|B.WAN|C.MAN|D.Internet</td></tr>
+<tr><td nowrap>D</td><td nowrap>语句A：HTML文档必须包括“头”和“主体”两部分\r\n语句B：HTML文档的扩展名为.htm或.html以下说法正确的是：<br>A.两句都对|B.两句都错|C.只有A对|D.只有B对</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下哪个项目不是可以在HTML文档中使用的特殊字符。<br>A.&gt;|B.&tl;|C.&copy;|D.&nbsp;</td></tr>
+<tr><td nowrap>C</td><td nowrap>Html标记中，哪个标记表示表格?<br>A.&lt;H1&gt;|B.&lt;TD&gt;|C.&lt;TABLE&gt;|D.&lt;TAB&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>Html标记中，用什么方法可以将整个表格在页面中居中?<br>A.place=middle|B.type=middle|C.align=center|D.type=center</td></tr>
+<tr><td nowrap>A</td><td nowrap>我们想要让当前页面的背景色为蓝色，应该使用哪一句代码来描述此种设置?<br>A.bgcolor=&quot;blue&quot;|B.bgground=&quot;blue&quot;|C.backcolor=&quot;blue&quot;|D.background=&quot;blue&quot;</td></tr>
+<tr><td nowrap>A</td><td nowrap>我们想要让当前整个表格的背景色为蓝色，应该使用哪一句代码来描述此种设置?<br>A.bgcolor=&quot;blue&quot;|B.bgground=&quot;blue&quot;|C.backcolor=&quot;blue&quot;|D.background=&quot;blue&quot;</td></tr>
+<tr><td nowrap>C</td><td nowrap>我们想要让表格的边框在页面中一定不显示出来，用什么方法可以做到呢?<br>A.bgcolor=&quot;white&quot;|B.bgcolor=&quot;null&quot;|C.border=&quot;0&quot;|D.bordercolor=&quot;white&quot;</td></tr>
+<tr><td nowrap>C</td><td nowrap>我们想要在框架中加入一个叫做list.htm的文件，应该在HTML中如何描述它?<br>A.framepage=&quot;list.htm&quot;|B.frametarget=&quot;list.htm&quot;|C.framesrc=&quot;list.htm&quot;|D.frameframepage=&quot;list.htm&quot;</td></tr>
+<tr><td nowrap>B</td><td nowrap>我们想要在页面中加入一个层，可以使用哪些HTML标记来描述它?(选择2项)<br>A.&lt;floor&gt;|B.&lt;div&gt;|C.&lt;span&gt;|D.&lt;level&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>下面语句表述正确的是<br>A. marginwidth=5表示框架宽度部分边缘所保留的空间。|B.marginwidth=5表示框架宽度空间|C.noresize是设定不用使用框框的大小|D.noresize是使用者设定此参数后，可随意地拉动框架改变其大小。</td></tr>
+<tr><td nowrap>C</td><td nowrap>不是表单提供给用户的输入形式是<br>A.Text|B.Radio|C.Type|D.file</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪种CSS样式定义的方式拥有最高的优先级?<br>A. 嵌入|B. 行内|C. 链接|D. 导入</td></tr>
+<tr><td nowrap>B</td><td nowrap>web标准的制定者是?<br>A. 微软|B. 万维网联盟（W3C.|C. 网景公司（Netscape）|D. SUN公司</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列的HTML中哪个是最大的标题?<br>A. &lt;h6&gt;|B. &lt;head&gt;|C. &lt;heading&gt;|D. &lt;h1&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列的HTML中哪个可以插入一条水平线?<br>A. &lt;br&gt;|B. &lt;hr&gt;|C. &lt;break&gt;|D. &lt;P&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以添加背景颜色?<br>A. &lt;body color=&quot;yellow&quot;&gt;|B. &lt;background&gt;yellow&lt;/background&gt;|C. &lt;body bgcolor=&quot;yellow&quot;&gt;|D. &lt;body backcolor=&quot;yellow&quot;&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>请选择产生粗体字的HTML标签：<br>A. &lt;bold&gt;|B. &lt;bb&gt;|C. &lt;b&gt;|D. &lt;bld&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>请选择产生斜体字的HTML标签：<br>A. &lt;i&gt;|B. &lt;italics&gt;|C. &lt;ii&gt;|D. &lt;it&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以产生超链接?<br>A. &lt;aurl=&quot;http://www.w3schools.com&quot;&gt;W3Schools.com&lt;/a&gt;|B. &lt;a&gt;http://www.w3schools.com&lt;/a&gt;|C. &lt;a href=&quot;http://www.w3schools.com&quot;&gt;W3Schools&lt;/a&gt;|D. &lt;a&gt;http://www.w3schools.com&lt;/a&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>如何制作电子邮件链接?<br>A. &lt;a href=&quot;xxx@yyy&quot;&gt;|B. &lt;mail href=&quot;xxx@yyy&quot;&gt;|C. &lt;a href=&quot;mailto:xxx@yyy&quot;&gt;|D. &lt;mail&gt;xxx@yyy&lt;/mail&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>如何在新窗口打开链接?<br>A. &lt;a href=&quot;url&quot; new&gt;|B. &lt;a href=&quot;url&quot; target=&quot;_blank&quot;&gt;|C. &lt;a href=&quot;url&quot;target=&quot;new&quot;&gt;|D. &lt;a href=&quot;url&quot; target=&quot;_parent&quot;&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下选项中，哪个全部都是表格标签?<br>A. &lt;table&gt;&lt;head&gt;&lt;tfoot&gt;|B. &lt;table&gt;&lt;tr&gt;&lt;td&gt;|C. &lt;table&gt;&lt;tr&gt;&lt;tt&gt;|D. &lt;thead&gt;&lt;body&gt;&lt;tr&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>请选择可以使单元格中的内容进行左排列的正确HTML标签：<br>A. &lt;td align=&quot;left&quot;&gt;|B. &lt;td valign=&quot;left&quot;&gt;|C. &lt;td leftalign&gt;|D. &lt;tdleft&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>如何产生带有数字列表符号的列表?<br>A. &lt;ul&gt;|B. &lt;dl&gt;|C. &lt;ol&gt;|D. &lt;list&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>如何产生带有圆点列表符号的列表?<br>A. &lt;dl&gt;|B. &lt;list&gt;|C. &lt;ol&gt;|D. &lt;ul&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以产生复选框?<br>A. &lt;input type=&quot;check&quot;&gt;|B. &lt;checkbox&gt;|C. &lt;input type=&quot;checkbox&quot;&gt;|D. &lt;check&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以产生文本框?<br>A. &lt;input type=&quot;textfield&quot;&gt;|B. &lt;textinput type=&quot;text&quot;&gt;|C. &lt;input type=&quot;text&quot;&gt;|D. &lt;textfield&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列的HTML中哪个可以产生下拉列表?<br>A. &lt;list&gt;|B. &lt;input type=&quot;list&quot;&gt;|C. &lt;input type=&quot;dropdown&quot;&gt;|D. &lt;select&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列的HTML中哪个可以产生文本区?<br>A. &lt;textarea&gt;|B. &lt;input type=&quot;textarea&quot;&gt;|C. &lt;input type=&quot;textbox&quot;&gt;|D. &lt;textarea&gt;&lt;/textarea&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列的HTML中哪个可以插入图像?<br>A. &lt;img href=&quot;image.gif&gt;|B. &lt;image src=&quot;image.gif&quot;&gt;|C. &lt;img src=&quot;image.gif&quot;&gt;|D. &lt;img&gt;image.gif&lt;/img&gt;</td></tr>
+<tr><td nowrap>A</td><td nowrap>下列的HTML中哪个可以插入背景图像?<br>A. &lt;body background=&quot;background.gif&quot;&gt;|B. &lt;backgroundimg=&quot;background.gif&quot;&gt;|C. &lt;img src=&quot;background.gif&quot;background&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>for循环如何开始?<br>A. for (i &lt;= 5; i++)|B. for(i = 0; i &lt;= 5; i++)|C. for (i = 0; i &lt;= 5)|D. for i = 1 to 5</td></tr>
+<tr><td nowrap>C</td><td nowrap>如何在JavaScript中添加注释?<br>A. \' This is a comment|B. &lt;!--This is a comment--&gt;|C. //This is a comment</td></tr>
+<tr><td nowrap>C</td><td nowrap>定义JavaScript数组的正确方法是?<br>A. var txt = new Array=&quot;tim&quot;,&quot;kim&quot;,&quot;jim&quot;|B. var txt = new Array(1:&quot;tim&quot;,2:&quot;kim&quot;,3:&quot;jim&quot;)|C. var txt = new Array(&quot;tim&quot;,&quot;kim&quot;,&quot;jim&quot;)|D. var txt = newArray:1=(&quot;tim&quot;)2=(&quot;kim&quot;)3=(&quot;jim&quot;)</td></tr>
+<tr><td nowrap>B</td><td nowrap>如何求得2和4中最大的数?<br>A. Math.ceil(2,4)|B. Math.max(2,4)|C. ceil(2,4)|D. top(2,4)</td></tr>
+<tr><td nowrap>B</td><td nowrap>打开名为“window2”的新窗口的JavaScript语法是?<br>A. open.new(&quot;http://www.w3schools.com&quot;,&quot;window2&quot;)|B. window.open(&quot;http://www.w3schools.com&quot;,&quot;window2&quot;)|C. new(&quot;http://www.w3schools.com&quot;,&quot;window2&quot;)|D. new.window(&quot;http://www.w3schools.com&quot;,&quot;window2&quot;)</td></tr>
+<tr><td nowrap>B</td><td nowrap>如何在浏览器的状态栏放入一条消息?<br>A. statusbar = &quot;put your message here&quot;|B. window.status = &quot;put your message here&quot;|C. window.status(&quot;put your messagehere&quot;)|D. status(&quot;put your message here&quot;)</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列不属于文档对象的方法的是（）<br>A. createElement|B. getElementById|C. getElementByName|D. forms.length</td></tr>
+<tr><td nowrap>C</td><td nowrap>下面这段代码运行的结果（）\r\n&lt;body&gt;\r\n&lt;scriptlanguage=”JavaScript”&gt;\r\ndocument.writeln(“文档最后修改于”+document.lastModifieD.;\r\nvar lastModObj=new Date(document.lastModifieD.;\r\nalert(lastModObj.getMinutes());\r\n&lt;/script&gt;\r\n&lt;/body&gt;<br>A. 弹出一个对象框|B. 没有任何输出|C. 在文档中显示文档最后修改的时间|D. 在对话框中显示文档最后修改的时间</td></tr>
+<tr><td nowrap>A</td><td nowrap>分析下面这两行代码的作用（）\r\n01 &lt;A href=”javascript:history.back()”&gt;&lt;/A&gt;\r\n02 &lt;A href=”javascript:history.forward()”&gt;&lt;/A&gt;<br>A.代码第1行的作用相当于后退按钮|B.代码第2行的作用相当于后退按钮|C.代码第1行的作用相当于前进按钮|D.以上表述不都不正确</td></tr>
+<tr><td nowrap>C</td><td nowrap>通常情况下，一个URL的格式是（）<br>A. 协议//路径名称主机：端口/#哈希标识?搜索条件|B. 协议//主机：端口/#哈希标识/路径名称?搜索条件|C. 协议//主机：端口/路径名称?搜索条件|D. 协议//主机：端口?搜索条件/路径名称#哈希标识</td></tr>
+<tr><td nowrap>C</td><td nowrap>可以使用下列哪种方法来用一个URL取代当前窗口的URL（）<br>A. load|B. onload|C. replace|D. open</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列对表单对象的属性表述不正确的是（）<br>A. name：返回表单的名称|B. action：返回/设定表单的提交地址|C. target：返回/设定表单提交内容的编码方式|D. length：返回该表单所含元素的数目</td></tr>
+<tr><td nowrap>C</td><td nowrap>对下面这段代码分析不正确的是（）\r\nfuntcion Submit()\r\n{\r\nform1.submit();\r\nalert(“提交成功”)\r\n}\r\nfunctionReset()\r\n{\r\nform1.reset();\r\n}<br>A. 调用Submit()可以提交表单|B. 调用Reset()重置表单|C. 调用Reset()相当于提交按钮|D. 调用Submit()相当于提交按钮</td></tr>
+<tr><td nowrap>B</td><td nowrap>对下面这段代码分析不正确的是（）\r\nvar len=form1.elements.length;\r\nfor(var i=0 ;i&lt;Len; i++)\r\n{\r\nif(form1.elements[i].value.length==0)\r\n{\r\nalert(“你的资料没有填写完善”);\r\nreturn flase;\r\n}\r\n}<br>A. 代码第1行是取得当前表单元素的个数|B. 代码第1行是取得当前文本表单的个数|C. 这是循环验证表单|D. 这段代码可以验证表单中文本框中的值是否为空</td></tr>
+<tr><td nowrap>D</td><td nowrap>对下面这段代码分析您输入的字符数为正确的是（）\r\nfunction count()\r\n{\r\nvar len=form1.text.value.length;\r\nalert(“”+len+”个”)\r\n}<br>A. 代码第3行是取得当前文档中文本框的个数|B. 代码第3行是取得当前文档中表单的个数|C. 这段代码有错误|D. 这段代码是统计用户输入文本框中字符个数</td></tr>
+<tr><td nowrap>D</td><td nowrap>对下列代码分析正确的是（）\r\nfunction msg（）\r\n{\r\nvar p=document.createElement(“p”);\r\nvarText=document.createTextNode(“Hello!”);\r\np.appendChild(“Text”);\r\ndocument.body.appendChild(p);\r\n}<br>A. 代码第2行是创建一个&lt;P&gt;元素标签|B. 代码第3行是创建一个文本节点|C. &lt;P&gt;是文本节点的子节点|D. 这代码的作用是创建新的节点</td></tr>
+<tr><td nowrap>D</td><td nowrap>对下面这段代码分析不正确的是（）\r\nvar reg=/ .o./ g; //寻找字符o前后接任意字符组成的有三个字符的字符串\r\nvar str= “How are you?” //源串\r\nvar result=new Array(); //用于接收结果\r\nwhile(reg.exec(str)!=null) //执行匹配操作，如果找到匹配则继续找下一项\r\n{\r\nresult.push(RegExp.lastMatch); //添加结果\r\n}\r\nalert(result);<br>A. 代码第1行是寻找字符o前后接任意字符组成的有三个字符的字符串|B. 代码第4行是执行匹配操作，如果找到匹配则继续找下一项|C. 代码第6行是将所得到的结果添加到数组中|D. 最后输出的是“How are you?”</td></tr>
+<tr><td nowrap>B</td><td nowrap>下面与IE结合对JavaScript调试支持比较好的工具是（）<br>A. 记事本|B. Microsoft Visual Studio 2005|C. JSEclipse|D. VC++</td></tr>
+<tr><td nowrap>D</td><td nowrap>在调试前的准备工作下列叙述不对的是（）<br>A. 在“设置”列表框中找到两个“禁用脚本调试”复选框，将它们前面的钩去掉|B. 如果“禁用脚本调试”复选框，前面的钩不去掉，则不会弹出调试信息|C. “禁用脚本调试”复选框，前面的钩去掉后，当程序出错时会弹出调试信息|D. “禁用脚本调试”复选框，前面的钩去不去与调试无关</td></tr>
+<tr><td nowrap>D</td><td nowrap>JS特性不包括( )<br>A.解释性|B.用于客户端|C.基于对象|D.面向对象</td></tr>
+<tr><td nowrap>A</td><td nowrap>下列JS的判断语句中( )是正确的<br>A.if(i==0)|B.if(i=0)|C.if i==0 then|D.if i=0 then</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列JavaScript的循环语句中( )是正确的<br>A.if(i&lt;10;i++)|B.for(i=0;i&lt;10)|C.for i=1 to 10|D.for(i=0;i&lt;=10;i++)</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列的哪一个表达式将返回假<br>A.!(3&lt;=1)|B.(4&gt;=4)&&(5&lt;=2)|C.(“a”==”a”)&&(“c”!=”d”)|D.(2&lt;3)||(3&lt;2)</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列选项中,( )不是网页中的事件<br>A.onclick|B.onmouseover|C.onsubmit|D.onpressbutton</td></tr>
+<tr><td nowrap>B</td><td nowrap>JS语句\r\nvar a1=10;\r\nvar a2=20;\r\nalert(“a1+a2=”+a1+a2)\r\n将显示( )结果<br>A.a1+a2=30|B.a1+a2=1020|C.a1+a2=a1+a2|D.显示错误</td></tr>
+<tr><td nowrap>B</td><td nowrap>将字串s中的所有字母变为小写字母的方法是( )<br>A.s.toSmallCase()|B.s.toLowerCase()|C.s.toUpperCase()|D.s.toUpperChars()</td></tr>
+<tr><td nowrap>C</td><td nowrap>产生当前日期的方法是( )<br>A.Now();|B.Date()|C.new Date()|D.newNow()</td></tr>
+<tr><td nowrap>A</td><td nowrap>HTML文档的树状结构中，（）标签为文档的根节点，位于结构中的最顶层。<br>A.&lt;HTML&gt;|B.&lt;HEAD&gt;|C.&lt;BODY&gt;|D.&lt;TITLE&gt;</td></tr>
+<tr><td nowrap>B</td><td nowrap>在HTML页面中，CSS样式的属性名为background-image对应的style对象的属性名是（）。<br>A.background|B.backgroungImage|C.image|D.background</td></tr>
+<tr><td nowrap>C</td><td nowrap>在使用Javascript实现省市级联菜单功能时，在添加城市列表前清空原来的下拉选项的代码是（）<br>A. document.myform.selCity.options.clear()|B.document.myform.selCity.options.deleteAll()|C. document.myform.selCity.options.length=0|D.document.myform.selCity.options.size=0</td></tr>
+<tr><td nowrap>C</td><td nowrap>在HTML文档对象模型中，history对象的（）用于加载历史列表中的下一个URL页面。<br>A．next()|B.back()|C.forward()|D.go(-1)</td></tr>
+<tr><td nowrap>B</td><td nowrap>在Javascript中要改变页面文档的背景色，需要修改document对象的（）属性。<br>A．BackColor|B.BackgroundColor|C.BgColor|D.Background</td></tr>
+<tr><td nowrap>D</td><td nowrap>在HTML页面中，不能与onChange事件处理程序相关联的表单元素有（）。<br>A．文本框|B.复选框|C.列表框|D.按钮</td></tr>
+<tr><td nowrap>B</td><td nowrap>在HTML页面上编写JavaScript代码时，应编写在（）标签中间。<br>A.&lt;javascript&gt;和&lt;/javascript&gt;|B.&lt;script&gt;和&lt;/script&gt;|C. &lt;head&gt;和&lt;/head&gt;|D.&lt;body&gt;和&lt;/body&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>在HTML页面中包含一个按钮控件mybutton，如果要实现点击该按钮时调用已定义的JavaScript函数compute，要编写的HTML代码是（）<br>A.&lt;inputname=”mybutton” type=”button” onBlur=”compute()”value=”计算”&gt;|B.&lt;inputname=”mybutton” type=”button” onFocus=”compute()”value=”计算”&gt;|C.&lt;inputname=”mybutton” type=”button” onClick=”function compute()”value=”计算”&gt;|D.&lt;input name=”mybutton” type=”button”on</td></tr>
+<tr><td nowrap>C</td><td nowrap>分析下面的Javascript代码段，输出结果是（）\r\nvar mystring=”I am a student”;\r\nvar a=mystring.substring(9,13);\r\ndocument.write(a);<br>A．Stud|B.tuden|C.uden|D.udent</td></tr>
+<tr><td nowrap>C</td><td nowrap>Javascript中制作图片代替按钮的提交效果需要手动提交方法submit()，以下调用正确的是（）<br>A.submit();|B.myform.submit()|C.document.myform.submit()|D.window.myform.submit();</td></tr>
+<tr><td nowrap>D</td><td nowrap>如果在HTML页面中包含如下图片标签，则选项中的（）语句能够实现隐藏该图片的功能。\r\n&lt;img id=”pic” src=”Sunset.jpg” width=”400”height=”300”&gt;<br>A.document.getElementById(“pic”).style.display=”visible”;|B.document.getElementById(“pic”).style.display=”disvisible”;|C.document.getElementById(“pic”).style.display=”block”;|D.document.getElementById(“pic”).style.display=”none”;</td></tr>
+<tr><td nowrap>D</td><td nowrap>如果在HTML页面中包含如下图片标签，则在下划线处添加（）代码能够实现隐藏该图片的功能。\r\n&lt;img id=”pic” src=”Sunset.jpg” width=”400”height=”300” _____ &gt;<br>A.style=”display:visible”;|B. style=”display:disvisible”;|C.style=”display:block”;|D. style=”display:none”;</td></tr>
+<tr><td nowrap>C</td><td nowrap>在HTML文档中包含如下超链接，要实现当鼠标移入该链接时，超链接文本大小变为30px，选项中的编码正确的是（）<br>A.&lt;a href=”#”onmouseover=”this.style.font-size=30px”&gt;注册&lt;/a&gt;|B.&lt;a href=”#”onmouseout=”this.style.fontsize=30px”&gt;注册&lt;/a&gt;|C.&lt;a href=”#” onmouseover=”this.style.fontSize=30px”&gt;注册&lt;/a&gt;|D.&lt;a href=”#”onmouseout=”this.style.font-size=30px”&gt;注册&lt;/a&gt;</td></tr>
+<tr><td nowrap>D</td><td nowrap>在HTML页面上，当按下键盘上的任意一个键时都会触发Javascript的（）事件。<br>A.onFocus|B.onBlur|C.onSubmit|D.onKeyDown</td></tr>
+<tr><td nowrap>C</td><td nowrap>分析下面的Javascript代码段，输出结果是（）\r\nvar s1=parseInt(“101中学”);\r\ndocument.write(s1);<br>A. NaN|B. 101中学|C.101|D.出现脚本错误</td></tr>
+<tr><td nowrap>A</td><td nowrap>在HTML中，点击图片”previous.gif”上的超级链接后页面将加载历史列表中的上一个URL页面。代码如下所示，应在下划线处填入（）\r\n&lt;a href=_______&gt;&lt;imgsrc=”previous.gif” width=”67” height=”21”&gt;&lt;/a&gt;<br>A.”javascript:history.go(-1)”;|B. “history.go(1)”|C. “history.go(-1)”|D. “javascript:history.go(1)”</td></tr>
+<tr><td nowrap>A</td><td nowrap>在HTML页面上包含如下所示的层对象，则javascript语句document.getElementById(“info”).innerHTML的值是（）\r\n&lt;div id=”info”style=”display:block”&gt;&lt;p&gt;请填写&lt;/p&gt;&lt;/div&gt;<br>A.请填写|B.&lt;p&gt;请填写&lt;/p&gt;|C.id=”info”style=”display:block”|D.&lt;divid=”info” style=”display:block”&gt;&lt;p&gt;请填写&lt;/p&gt;</td></tr>
+<tr><td nowrap>C</td><td nowrap>JavaScript是一种（）语言<br>A．汇编语言|B．高级语言|C．脚本语言|D．近似语言</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列JavaScript表达式当中，错误的是（）<br>A．var tempA, tempB, tempC|B．tempA *= 3|C．tempA &gt;= tempB || tempA &lt;= tempC|D．tempA &gt;= tempB &gt;tempC</td></tr>
+<tr><td nowrap>C</td><td nowrap>表达式”This is my”+”book”的结果是（）（注：其中，字符T的ASCII码为84，字符b的ASCII码为98）<br>A．100|B．84his is my 98ook|C．This is my book|D．不能计算，要报错</td></tr>
+<tr><td nowrap>A</td><td nowrap>下列名称中，能作为变量名的是（）<br>A．pArray|B．this|C．Function|D．*pNumber</td></tr>
+<tr><td nowrap>D</td><td nowrap>在JavaScript中，以下代码能并闭一个窗口的是<br>A．window.exit()|B．window.shutdown()|C．window.end()|D．window.close()</td></tr>
+<tr><td nowrap>A</td><td nowrap>在JavaScript中，以下代码能产生输出的是<br>A．document.write()|B．window.write()|C．document.confirm()|D．write “The UndefinedFunction”</td></tr>
+<tr><td nowrap>A</td><td nowrap>要获取一个ID为username的表单元素的值，不正确的代码是（）<br>A．document.username.value|B．document.all.username.value|C．document.getElementById(“username”).value|D．如果表单元素外层无表单，则可以直接使用username.value</td></tr>
+<tr><td nowrap>D</td><td nowrap>如果想控制一个名为menuBar的层右移20个像素显示，下列能实现的是（）<br>A.document.menuBar.display += 20|B.document.all.menuBar.pixelLeft += 20|C.document.all.menuBar.left += 20|D.document.all.menuBar.style.pixelLeft+= 20</td></tr>
+<tr><td nowrap>A</td><td nowrap>下列可以控制某个元素a的文本颜色的是<br>A．document.all.a.style.color|B．document.all.a.style.backgroundColor|C．document.a.color|D．document.a.gackgroundColor</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列关于网页元素overflow的说法，正确的是<br>A．指网页元素的位置，距离左边框和上边框的距离|B．指网页元素的位置，距离右边框和下边框的距离|C．指网页元素的定位方式，可以取值中包括absolute|D．指网页元素的内容溢出时，是否显示多余的内容</td></tr>
+<tr><td nowrap>A</td><td nowrap>如果将想将两个层排列在同一行中，下列描述不能实现的是（）<br>A．直接插入两个DIV标记，会自动排在同一行|B．指定DIV的position属性为absolute，然后将层位置拖放到同一行中|C．指定DIV标记的宽，并且指定其浮动方式，当层宽度之和小于外层元素宽度时，会排在同一行|D．使用一个表格，将两个层分别放入一行中的两个单元格内</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列关于元素在网页中的叠放顺序描述，不正确的是（）<br>A．使用CSS属性z-index来实现叠放顺序|B．属性的取值越大，表示放置的层次越高|C．属性取值可以为负整数|D．可以叠放，但叠放顺序不能指定，将由计算机随机产生</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪个是获得某时间对象的月份方法getMonth()的特点（）<br>A．获取的月份是从1开始计数的|B．获取的月份是从0开始计数的|C．获取的月份是英文单词的缩写，如六月份为Jun|D．无法获取月份</td></tr>
+<tr><td nowrap>A</td><td nowrap>求一个表达式的值，可以使用的函数有 。<br>A．eval()|B．isNaN()|C．parseInt()|D．parseFloat()</td></tr>
+<tr><td nowrap>B</td><td nowrap>JAVASCRIPT的onSubmit事件的作用是 。<br>A.当一个表单中的对象被点击时，执行的JavaScript事件|B.当用户提交一个表单时，需要执行的JAVASCRIPT事件|C.当鼠标移出对象时发生的事件|D.对象发生改变时调用的事件</td></tr>
+<tr><td nowrap>BD</td><td nowrap>我们想要将页面中的文本采用项目符号的形式予以显示，采用哪些标记组合可以达到我们的要求?<br>A.&lt;P&gt;|B.&lt;UL&gt;|C.&lt;BR&gt;|D.&lt;LI&gt;|E.&lt;TR&gt;</td></tr>
+<tr><td nowrap>ACD</td><td nowrap>RGB三原色的组成是哪三种颜色?<br>A.红|B.黄|C.蓝|D.绿|E.紫</td></tr>
+<tr><td nowrap>AD</td><td nowrap>&lt;HTML&gt;\r\n&lt;HEAD&gt;\r\n&lt;TITLE&gt;欢迎学习 HTML&lt;/TITLE&gt;\r\n&lt;/HEAD&gt;\r\n&lt;BODY&gt;\r\n&lt;H3&gt;我的第一个 HTML 文档&lt;/H3&gt;\r\n&lt;/BODY&gt;\r\n&lt;/HTML&gt;<br>A.使用浏览器打开上述网页，网页的标题是”欢迎学习 HTML”|B.使用浏览器打开上述网页，网页的标题是”我的第一个HTML文档”|C.使用浏览器打开上述网页，网页的内容是”欢迎学习 HTML”|D.使用浏览器打开上述网页，网页的内容是” 我的第一个HTML文档”|E.使用浏览器打开上述网页，网页的内容是”欢迎学习 HTML我的第一个HTML文档”</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>下面是HTML表格标记的是<br>A. &lt;table&gt;|B. &lt;tr&gt;|C. &lt;td&gt;|D. &lt;from&gt;|E. &lt;div&gt;</td></tr>
+<tr><td nowrap>ABC</td><td nowrap>有关JavaScript语句，下列说法正确的是 。<br>A.单行注释语句是在需要注释的行前面用//|B.多行注释语句是在需要注释的文字两端加/* 注释文字*/|C.with语句的功能是为一段程序建立默认对象|D.JavaScript中没有if...else语句|E.JavaScript中只有while语句，而没有do...while语句</td></tr>
+<tr><td nowrap>BCDE</td><td nowrap>以下生成对象的方法中，正确的是 。<br>A.varz = new Boolean(A.;|B.varstr = &quot;JavaScript&quot;;|C.fruit=newArray(3);|D.today1=newDate(2008,10,1);|E.today=newDate(&quot;October 1,2008&quot;);</td></tr>
+<tr><td nowrap>ACE</td><td nowrap>关于JAVASCRIPT函数，下列说法正确的是 。<br>A.函数是独立于主程序的，具有特定功能的一段程序代码块|B.函数可以不用function关键字|C.函数的命名规则同变量命名规则是一样的|D.函数必须使用return语句|E.函数的调用时直接用函数名，并给形式参数赋值</td></tr>
+<tr><td nowrap>AB</td><td nowrap>在HTML页面中，定义了如下的JavaScript函数，则正确调用该函数的HTML代码是（）\r\nfunction compute(op){\r\nalert(op);\r\n}<br>A.&lt;input name=”a” type=”button”onclick=”compute(this.valuE.”value=”+”&gt;|B.&lt;input name=”b” type=”button”onclick=”compute(‘-‘)” value=”-”&gt;|C.&lt;inputname=”c” type=”button” onclick=”compute(“*”)” value=”*”&gt;|D.&lt;inputname=”d” type=”button” onclick=”compute(/ )” v</td></tr>
+<tr><td nowrap>ACDE</td><td nowrap>关于JAVASCRIPT事件，下列说法正确的是 。<br>A.事件是用户对浏览器所做的特定的动作（操作），是实现交互操作的一种机制|B.对象发生改变时调用的事件是onBlur|C.当一个表单中的对象被点击时，执行的JavaScript事件是onClick|D.当浏览器完成加载一个窗口或者加载完成框架集合中的所有框时，执行的JavaScript事件是onLoad|E.当 select事件发生时执行的JavaScript 事件是onSelect</td></tr>
+<tr><td nowrap>ACDE</td><td nowrap>有关JAVASCRIPT的定时器，下列说法正确的是 。<br>A.用于指定在一段特定的时间后执行某段程序|B.setTimeout(“&lt;表达式&gt;”，毫秒数)其功能是在经过毫秒数后重复执行&lt;表达式&gt;|C.clearTimeout(iD.是用于终止一个定时器|D.setInterval(“&lt;表达式&gt;”，毫秒)的功能是每隔毫秒数重复执行&lt;表达式&gt;，直至窗口）框架被关闭或执行clearInterval。|E.clearInterval(iD.的功能是终止定时器</td></tr>
+<tr><td nowrap>ABCDE</td><td nowrap>有关窗口对象的方法，下列说法正确的是 。<br>A.弹出警告信息用alert(信息字串)|B.显示确认信息对话框用confirm(信息字串)|C.显示提示信息，并提供可输入的字段用prompt(提示字串[，默认值])|D.将焦点移到该窗口，是用focus()|E.进入浏览器设置的主页，可以使用home()</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>窗口对象的事件处理程序有 。<br>A.onError|B.onLoad|C.onFocus|D.offMove|E.offFocus</td></tr>
+<tr><td nowrap>ABCD</td><td nowrap>open方法的窗口规格参数，下列说法正确的是 。<br>A.是否显示网址工具栏，用location|B.是否显示菜单工具栏，用menubar|C.是否显示滚动条，用scrollbars|D.是否显示状态栏，用status|E.是否可以改变窗口的大小，用resize</td></tr>
+<tr><td nowrap>AD</td><td nowrap>在Javascript中，对于浏览器对象的层次关系理解正确的是（）<br>A.window对象是所有页面内容的根对象|B.document对象包含location对象和history对象|C.location对象包含history|D.document对象包含form对象|E.document对象包含location对象</td></tr>
+<tr><td nowrap>C</td><td nowrap>分析下列C#语句，注意类MyClass 没有访问修饰符：\r\nnamespace ClassLibrary1\r\n{\r\nclass MyClass\r\n{\r\npublic class subclass\r\n{\r\nint i;\r\n}\r\n}\r\n}\r\n若必须为类MyClass 添加访问修饰符，并使MyClass 的可访问域保持不变，则应选择_________。<br>A. private|B. protected|C. internal|D. public</td></tr>
+<tr><td nowrap>D</td><td nowrap>分析下列程序中类MyClass 的定义\r\nclass BaseClass\r\n{\r\npublic int i;\r\n}\r\nclass MyClass : BaseClass\r\n{\r\npublic new int i;\r\n}\r\n则下列语句在Console上的输出为_______.\r\nMyClass y = new MyClass();\r\nBaseClass x = y;\r\nx.i = 100;\r\nConsole.WriteLine(&quot;{0}, {1}&quot;, x.i, y.i);\r\n（提示：注意类 MyClas<br>A. 0, 0|B. 100, 100|C. 0, 100|D. 100, 0</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列语句创建了多少个string 对象?\r\nstring [,] strArray = new string [3, 4];<br>A. 0|B. 3|C. 4|D. 12</td></tr>
+<tr><td nowrap>A</td><td nowrap>以下类MyClass 的属性count 属于_____属性.\r\nclass MyClass\r\n{\r\nint i;\r\nint count\r\n{\r\nget\r\n{\r\nreturn i;\r\n}\r\n}\r\n}<br>A. 只读|B. 只写|C. 可读写|D. 不可读不可写</td></tr>
+<tr><td nowrap>A</td><td nowrap>已知结构Resource 的定义如下：\r\nstruct Resource\r\n{\r\npublic int Data;\r\n}\r\n则下列语句的运行结果为_________。\r\nResource [] list = new Resource [20];\r\nfor ( int i = 0; i &lt; 20; i++)\r\n{\r\nSystem.Console.WriteLine(“data = {0}”, list[i].Data);\r\n}<br>A. 打印20行，每行输出都是 data = 0|B. 打印20行，每行输出都是 data = null|C. 打印20行，第1行输出data = 0，第2行输出data = 2，…，第20行输出data = 19|D. 出现运行时异常</td></tr>
+<tr><td nowrap>D</td><td nowrap>分析下列语句：\r\nnamespace TestCS\r\n{\r\npublic delegate void Hello(string target);\r\n}\r\n该语句的作用是：<br>A. 在TestCS 命名空间中定义了一个名为Hello 的全局方法；|B. 在TestCS 命名空间中声明了函数Hello 的原型；|C. 在TestCS 命名空间中定义了一个名为Hello 的函数指针；|D. 在TestCS 命名空间中定义了一个名为Hello 的委托类型；</td></tr>
+<tr><td nowrap>C</td><td nowrap>已知委托类型DoSomething 定义如下：\r\npublic delegate void DoSomething();\r\na, b, c, d 是DoSomething 的变量，分别有以下调用列表：\r\na:  objA.Func1、objA.Func2\r\nb:  objA.Func1、Class1.StaticFunc\r\nc： objA.Func1、Class2.StaticFunc\r\nd:  Class2.StaticFunc\r\n其中objA 为类Class1 的对象，objB 为类Class2 的对<br>A. 2|B. 3|C. 4|D. 5</td></tr>
+<tr><td nowrap>A</td><td nowrap>类MyClass 中已知有以下字段定义：\r\nobject i = 100, j = 200, k = 300;\r\n则执行下列语句后，这3 个字段的值是______：\r\nInterlocked.CompareExchange(ref i, j, k);<br>A. i:100, j:200, k:300|B. i:200, j:200, k:300|C. i:300, j:200, k:100|D. i:100, j:100, k:300</td></tr>
+<tr><td nowrap>C</td><td nowrap>多线程C#程序中，类MyClass 定义如下：\r\nclass MyClass\r\n{\r\nReaderWriterLock rwl = new ReaderWriterLock();\r\nprivate int i;\r\npublic void Read()\r\n{\r\nrwl.AcquireReaderLock(Timeout.Infinite);\r\nInterlocked.Increment(ref i); Thread.Sleep(1000);\r\nrwl.ReleaseReaderLock();\r\n}\r\npub<br>A. 0个|B. 1个|C. 多个|D. 没有</td></tr>
+<tr><td nowrap>D</td><td nowrap>以下叙述正确的是____。<br>A. do….while语句构成的循环不能用其他语句构成的循环来代替|B. do….while语句构成的循环只能用break语句退出|C. 用do….while语句构成的循环，在while后的表达式为true时结束循环|D. 用do….while语句构成的循环，在while后的表达式应为关系表达式或逻辑表达式</td></tr>
+<tr><td nowrap>C</td><td nowrap>假定int类型变量占用四个字节，若有定义：\r\nint [] x = new int [10] {0, 2, 4, 4, 5, 6, 7, 8, 9, 10};\r\n则数组x在内存中所占字节数是____。<br>A. 6|B. 20|C. 40|D. 80</td></tr>
+<tr><td nowrap>D</td><td nowrap>有定义语句：\r\nint [,] a = new int[5,6];\r\n则下列正确的数组元素的引用是____。<br>A. a(3,4)|B. a(3)(4)|C. a[3][4]|D. a[3,4]</td></tr>
+<tr><td nowrap>C</td><td nowrap>以下所列的各个方法头中，正确的是____。<br>A. void play(var a: Integer, var b: Integer)|B. void play(int a,b)|C. void play(int a, int b)|D. Sub play(a as integer, b as integer)</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列程序的输出结果是____。\r\nusing System;\r\nclass Example1\r\n{\r\nstatic long sub(int x, int y)\r\n{\r\nint z;\r\nz = x * x + y * y;\r\nreturn z;\r\n}\r\npublic static void Main()\r\n{\r\nint a = 30;\r\nsub(5, 2);\r\nConsole.WriteLine(“{0}”, a);\r\n}\r\n}<br>A. 0|B. 29|C. 30|D. 无定值</td></tr>
+<tr><td nowrap>BE</td><td nowrap>假设给出下面代码：\r\ntry\r\n{\r\nthrow new OverflowException();\r\n}\r\ncatch (FileNotFoundException e)\r\n{\r\n}\r\ncatch (OverflowException e)\r\n{\r\n}\r\ncatch (SystemException e)\r\n{\r\n}\r\ncatch\r\n{\r\n}\r\nfinally\r\n{\r\n}\r\n则下面哪些语句会得到执行____。<br>A. catch (OverflowException e) {}|B. catch (OverflowException e) {}|C. catch (SystemException e) {}|D. catch {}|E. finally {}</td></tr>
+<tr><td nowrap>C</td><td nowrap>下面是几条定义初始化一维数组的语句, 指出其中正确的是____。<br>A. int arr1 [] = {6, 5, 1, 2, 3};|B. int [] arr1 = new int [];|C. int [] arr1 = new int [] {6, 5, 1, 2, 3};|D. int [] arr1;arr1 = {6, 5, 1, 2, 3};</td></tr>
+<tr><td nowrap>B</td><td nowrap>下面是几条动态初始化一维数组的语句, 指出其中正确的是____。<br>A. int [] arr2 = new int [];|B. int [] arr2 = new int [4];|C. int [] arr2 = new int [i] {6, 5, 1, 2, 3};|D. int [] arr2 = new int [4] {6, 5, 1, 2, 3};</td></tr>
+<tr><td nowrap>D</td><td nowrap>下面是几条定义并初始化二维数组的语句,指出其中正确的是____。<br>A. int arr3 [][] = new int [4,5];|B. int [][] arr3 = new int [4,5];|C. int arr3 [,] = new int [4,5]|D. int [,] arr3 = new int [4,5];</td></tr>
+<tr><td nowrap>A</td><td nowrap>如果要实现重写，在基类的方法中必须使用virtual关键字，在派生类的\r\n方法中必须使用overrides关键字。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>静态类和实例类的区别在于：静态类不需要初始化即可直接使用，实例类\r\n需要进行实例化，生成对象才可使用。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>菜单项标题中有含有带下划线的字符，这是快捷键。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>C#异常处理中可以使用多个catch子句，此时应将高级别异常类的catch子句放在前面。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>C#程序里,创建新的类对象用关键字new，回收无用的类对象使用关键字free。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#中对象可以赋值，只要使用赋值号（等号）即可，相当于生成了一个各属性与赋值对象相同的新对象。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>不能指定接口中方法的修饰符。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>DotNet包含两个部分，即公共语言运行时和框架类库<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在同一行上可以书写多条语句，每条语句间用分号分隔。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在数据类型转化时，只能通过类型转换关键字或Convert类实现。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在定义数组时不允许为数组中的元素赋值。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>定义枚举时至少为其中的一个枚举成员赋值。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#类中，this代表了当前类本身。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>用Interval属性设置Timer控件Tick事件发生的时间间隔单位为秒。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>设置图片框控件的SizeMode属性为StretchImage时，图片可以按图片框的大小比例缩放显示。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>可以重写私有的虚方法。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#中，所有类都是直接或间接地继承System．Object类而得来的。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在C#中，任何方法都不能实现多继承。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#中，子类不能继承父类中用private修饰的成员变量和成员方法。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>可以阻止某一个类被其他类继承。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>一个窗体中可以有多个弹出式菜单。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>在C#Net中，窗体父子关系通过“属性”窗口来创建。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>使用Directory类的Move()方法可以删除文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>使用FileInfo类的Copy()方法可以复制文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>DataSet对象中的表可以和数据库中的表同名，也可以不同名。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>Command对象可以执行SQL语句。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>阅读以下的Asp.Net代码\r\npublic class WebForm1 : System.Web.UI.Page\r\n｛\r\n  protected System.Web.UI.WebControls.Button Button1;\r\n  protected System.Web.UI.HtmlControls.HtmlInputButton Button2;\r\n  protected System.Web.UI.WebControls.ListBox ListBox1;\r\n  protected Sys<br>A.将在页面上打印“Name”和“Color”|B.将在页面上打印“姓名”和“颜色”|C.什么都不显示|D.将提示错误信息</td></tr>
+<tr><td nowrap>C</td><td nowrap>在ASP.NET中，要验证输入的银行信誉卡卡号是否符合规定，需要使用（ ）验证控件?  <br>A.CustomValidator|B.RangeValidator|C.RegularExpressionValidator|D.Compare Validator</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#的数据类型有（）<br>A.值类型和调用类型|B.值类型和引用类型|C.引用类型和关系类型|D.关系类型和调用类型</td></tr>
+<tr><td nowrap>B</td><td nowrap>SERVER.MAPPATH(&quot;&quot;.&quot;&quot;)返回<br>A.出错|B.网站根目录|C.程序当前目录|D.操作系统的根目录</td></tr>
+<tr><td nowrap>C</td><td nowrap>想实现设为首页，加入收藏的效果，重点用到（）技术。  <br>A.ASP.NET技术；|B.C#技术；|C.javascript技术；|D.CSS技术；</td></tr>
+<tr><td nowrap>A</td><td nowrap>如果我们需要得到Select count(*) from tb的结果通常会使用SqlCommand的哪个方法?（ ）<br>A.ExecuteNonQuery()|B.ExecuteReader()|C.ExecuteScalar()|D.ExecuteXmlReader()</td></tr>
+<tr><td nowrap>A</td><td nowrap>ASP.NET框架中，服务器控件是为配合Web表单工作而专门设计的。服务器控件有两种类型，它们是( )<br>A.HTML控件和Web控件|B.HTML控件和XML控件|C.XML控件和Web控件|D.HTML控件和IIS控件</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列选项中，（）是引用类型。<br>A.enum类型|B.struct类型|C.string类型|D.int类型</td></tr>
+<tr><td nowrap>B</td><td nowrap>要想在日历控件中能同时选择多个日期应该设置的属性是<br>A.SELECTEDDATE|B.SELECTIONMODE|C.SELECTORSTYLE|D.SELECTIONCHANGED</td></tr>
+<tr><td nowrap>D</td><td nowrap>如果想自己定制一下验证规则，以代码的方式约束一下用户的输入，需要用到（）?  <br>A.RequiredFieldValidator；|B.RangeValidator；|C.RegularExpressionValidator；|D.CustomValidator；</td></tr>
+<tr><td nowrap>C</td><td nowrap>要想设置字号，需要用到哪个样式?  <br>A.font-family|B.font-face|C.font-size|D.a:link</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列哪个变量的类型是字符串型（ ）  <br>A.int a|B.string a|C.float a|D.char a</td></tr>
+<tr><td nowrap>C</td><td nowrap>在连接ACCESS数据库的COMMANDTEXT中应该包括的内容有<br>A.PROVIDER|B.SERVER|C.DATABASE|D.DATA SOURCE</td></tr>
+<tr><td nowrap>C</td><td nowrap>下面哪个是用户控件的扩展名?<br>A.aspx|B.asmx|C.ascx|D.asax</td></tr>
+<tr><td nowrap>D</td><td nowrap>ASP.NET中，在Web窗体页上注册一个用户控件，指定该控件的名称为”Mike”，正确的注册指令为( )<br>A.&lt;%@Register TagPrefix = “Mike” TagName = “Space2” Src = “myX.ascx”%&gt;|B.&lt;%@Register TagPrefix = “Space2” TagName = “Mike” Src = “myX.ascx”%&gt;|C.&lt;%@Register TagPrefix = “SpaceX” TagName = “Space2” Src = “Mike”%&gt;|D.以上皆非</td></tr>
+<tr><td nowrap>A</td><td nowrap>要将一个数字888转换为字符串，可以使用（ ）?  <br>A.888.ToString( )|B.CString(888)|C.Integer.ParseInt(888)|D.Double.Parse(888)</td></tr>
+<tr><td nowrap>D</td><td nowrap>下列选项中，（）不属于.NET公共语言运行库的功能或特点。<br>A.类库加载|B.垃圾收集|C.多语言支持|D.统一的API</td></tr>
+<tr><td nowrap>D</td><td nowrap>CSS文件中的注释是（）?  <br>A.&lt;-- --&gt;|B.//|C.///|D./* */</td></tr>
+<tr><td nowrap>D</td><td nowrap>以下的ASP.NET页面代码：&lt;%@ Page Language=&quot;CS&quot; %&gt;\r\n&lt;html&gt;\r\n&lt;head&gt;\r\n&lt;/head&gt;\r\n&lt;body&gt;\r\n&lt;h3&gt;HyperLink Sample &lt;/h3&gt;\r\nClick on the HyperLink:&lt;br&gt;\r\n&lt;asp:HyperLink id=&quot;hyperlink1&quot; \r\n  ImageUrl=&quot;images/pict.jpg&quot;\r\n  NavigateUrl=&quot;http://www.microsoft.com&quot;\r\n  Text=&quot;Microsof<br>A.显示一个HyperLink按钮，并且点击跳转到http://www.microsoft.com页面|B.显示一个HyperLink按钮，但是不执行任何跳转|C.不显示显示HyperLink按钮|D.页面运行时将出现错提示信息</td></tr>
+<tr><td nowrap>D</td><td nowrap>阅读以下的C#代码：\r\n&lt;HTML&gt;\r\n &lt;HEAD&gt;\r\n  &lt;title&gt;WebForm4&lt;/title&gt;\r\n &lt;/HEAD&gt;\r\n &lt;body &gt;\r\n  &lt;form id=&quot;WebForm4&quot; method=&quot;post&quot; runat=&quot;server&quot;&gt;\r\n&lt;asp:Button id=&quot;Button1&quot; runat=&quot;server&quot; Width=&quot;144px&quot;\r\nHeight=&quot;32px&quot; Text=&quot;submit&quot;&gt;&lt;/asp:Button&gt;\r\n&lt;asp:TextBox id=&quot;TextBox1&quot; r<br>A.如果文本框为空，则什么信息都不显示|B.如果文本框输入的是数字，且数字大于100，则显示错误|C.如果文本框输入的是数字，且数字小于100，则显示错误|D.如果文本框中输入的是字符，则显示“错误”</td></tr>
+<tr><td nowrap>C</td><td nowrap>Using System;\r\nclass A\r\n｛\r\n public A()\r\n ｛\r\nConsole.WriteLine(&quot;A&quot;);\r\n ｝\r\n｝class B : A\r\n｛\r\n  public B()\r\n  ｛\r\n  Console.WriteLine(&quot;B&quot;);\r\n  ｝\r\n｝\r\nclass DefaultInitializerApp\r\n｛\r\n  public static void Main()\r\n  ｛\r\n  B b = new B();\r\n  Console.ReadLine();\r\n  ｝\r<br>A.A|B.B|C.AB|D.BA</td></tr>
+<tr><td nowrap>C</td><td nowrap>能实现网页转向的方法是________。<br>A.RESPONSE.APPENDHEADER()|B.RESPONSE.CLEARHEADERS()|C.RESPONSE.REDIRECT()|D.RESPONSE.ADDHEADER()</td></tr>
+<tr><td nowrap>D</td><td nowrap>若想将多个RADIOBUTTON组合起来构成一组,则需要设置它们的______属性。<br>A.UNIQUEID|B.STYLE|C.PARENT|D.GROUPNAME</td></tr>
+<tr><td nowrap>B</td><td nowrap>Javascript文件中的注释是（）?  <br>A.&lt;!----&gt;|B.//|C.///|D.//* */</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列哪个是一切类型的基类（ ）  <br>A.System|B.System.Window|C.System.Object|D.AllClass</td></tr>
+<tr><td nowrap>C</td><td nowrap>用户控件的扩展名是?  <br>A.html|B.aspx|C.ascx|D.jsp</td></tr>
+<tr><td nowrap>A</td><td nowrap>要想设置背景图片，需要用到哪个样式?  <br>A.background-image|B.image|C.text-align|D.a:link</td></tr>
+<tr><td nowrap>C</td><td nowrap>在ADO.NET中，对于Command对象的ExecuteNonQuery()方法和ExecuteReader()方法，下面叙述错误的是（）。<br>A.insert、update、delete等操作的Sql语句主要用ExecuteNonQuery()方法来执行|B.ExecuteNonQuery()方法返回执行Sql语句所影响的行数。|C.Select操作的Sql语句只能由ExecuteReader()方法来执行|D.ExecuteReader()方法返回一个DataReder对象；</td></tr>
+<tr><td nowrap>A</td><td nowrap>HTML文件中的注释是（）?  <br>A.&lt;!-- --&gt;|B.//|C.///|D./* */</td></tr>
+<tr><td nowrap>A</td><td nowrap>通过___ 可以设置SESSION对象的失效时间<br>A.TIMEOUT|B.TIMEOFF|C.TIMEEND|D.TIMEOVER</td></tr>
+<tr><td nowrap>A</td><td nowrap>对于System.Data.SqlClient.SqlCommand类的对象，如果要让它执行一个SQL语句，则应该把SQL字符串赋值给它的哪个属性（ ）  <br>A.CommandText|B.CommandType|C.Connection|D.Parameters</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列ASP.NET语句（）正确地创建了一个与SQL Server 2000数据库的连接。<br>A.str=&quot;server=.,uid=&quot;zhangsan&quot;,pwd=&quot;123&quot;,database=mydb&quot;;SqlConnection con=new SqlConnection;|B.str=&quot;server=.;uid=&quot;zhangsan&quot;;pwd=&quot;123&quot;;database=mydb&quot;;SqlConnection con=new SqlConnection;|C.str=&quot;server=.;uid=zhangsan;pwd=123;database=mydb&quot;;SqlConnection con</td></tr>
+<tr><td nowrap>D</td><td nowrap>SqlConnection con=new SqlConnection;\r\n70. DATAADAPTER对象的______属性可以不使用EXECUTENONQUERY()方法调用。<br>A.INSERTCOMMAND|B.UPDATECOMMAND|C.DELETECOMMAND|D.SELECTCOMMAND</td></tr>
+<tr><td nowrap>B</td><td nowrap>C#的数据类型有（ ）<br>A.值类型和调用类型；|B.值类型和引用类型；|C.引用类型和关系类型；|D.关系类型和调用类型；</td></tr>
+<tr><td nowrap>D</td><td nowrap>以下扩展名中，只有（）不是动态网页的扩展名。  <br>A..aspx；|B..php；|C..jsp；|D..xml；</td></tr>
+<tr><td nowrap>A</td><td nowrap>在Asp.net中所有的自定义用户控件都必须继承自________?<br>A.Control|B.web服务器控件|C.html服务器控件|D.Web窗体</td></tr>
+<tr><td nowrap>A</td><td nowrap>在ASP.NET中，要将文本输入框转变为密码输入框，需要设置Web服务器控件TextBox的（ ）属性?  <br>A.TextMode|B.MaxLength|C.AutoPostBack|D.ID</td></tr>
+<tr><td nowrap>B</td><td nowrap>与ASP.NET应用程序关系最为密切的配置文件是<br>A.CONFIG.SYS|B.WEB.CONFIG|C.MACHINE.SYS|D.MACHINE.CONFIG</td></tr>
+<tr><td nowrap>ABD</td><td nowrap>在ASP.NET中，可以使用多种方法从一个页面跳转到另外一个页面，或者联接到其他的超级连接，以下哪个是可选择的方案，（）。<br>A.使用Response对象的Redirect方法|B.使用Server对象的Execute方法|C.使用Server对象|D.使用Application对象的DirectTo方法</td></tr>
+<tr><td nowrap>B</td><td nowrap>每个web应用程序最多有1个Global.asax文件。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>每个DataList控件必须至少要定义一个项摸板。  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>每个web应用程序可以有多个Global.asax文件，他们只需要分布在不同的文件夹中就可以。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>用户对网站的一次访问称为一个会话。在网站中，每一个访问网站的用户都将产生自己的会话对象，被分配给一个唯一的SessionID.  <br>A.错误|B.正确</td></tr>
+<tr><td nowrap>D</td><td nowrap>以下哪个数据库实例不属于系统数据库（ ）。<br>A．Master|B．Model|C．Msdb|D．Temp</td></tr>
+<tr><td nowrap>A</td><td nowrap>有如下语句：\r\nDeclare @x int\r\nIf @x is null\r\nSelect ‘A’\r\nIf @x=0\r\nSelect ‘B’\r\nIf @x=’’\r\nSelect ‘C’\r\n查询的结果为（ ）。<br>A．A|B．B|C．C|D．有编译错误</td></tr>
+<tr><td nowrap>B</td><td nowrap>select * from student where sno=’05880101’\r\nunion\r\nselect * from student where sno=’05880102’\r\n与此查询语句等价的选项是（ ）。<br>A．select * from student where sno=’05880101’ and sno= ’05880102’|B．select * from student where sno=’05880101’ or sno= ’05880102’|C．select * from student where sno=’05880101’|D．select * from student where sno=’05880102’</td></tr>
+<tr><td nowrap>A</td><td nowrap>为数据库重命名的语法是（ ）。<br>A．Alter databse 旧名字 Modify Name=新名字|B．Alter databse 旧名字 Alter Name=新名字|C．Alter databse 旧名字 Modify Name 新名字|D．Rename databse 旧名字 To 新名字</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于T-SQL语言中的CASE语句，以下说法正确的是（ ）。<br>A．then关键字后面可以使用insert、update和delete语句|B．then关键字后面可以使用print语句|C．case关键字后面不能有任何的表达式|D．case语句中else关键字可以省略</td></tr>
+<tr><td nowrap>B</td><td nowrap>表t1有10行数据，使用select语句查询@@cursor_rows的结果分别是（ ）。 Declare t_cur cursor for select * from t1\r\nSelect @@cursor_rows\r\nOpen t_cur\r\nSelect @@cursor_rows\r\nClose t_cur\r\nDeallocate t_cur<br>A．0和10 B．10和10|C．0和-1 D．-1和-1</td></tr>
+<tr><td nowrap>B</td><td nowrap>下列聚合函数用法正确的是（ ）。<br>A．SUM(*)|B．COUNT(*)|C．MAX(*)|D．AVG(*)</td></tr>
+<tr><td nowrap>B</td><td nowrap>要删除一个名为A1的存储过程，应用使用命令（ ）。<br>A．delete procedure A1|B. drop procedure A1|C. alter procedure A1|D. execute C procedure A1</td></tr>
+<tr><td nowrap>A</td><td nowrap>关于DDL触发器下面说法错误的是（ ）。（本学期未讲的内容）<br>A．DDL触发器可以作用在表上|B．DDL触发器可以作用在数据库上|C．DDL触发器可以作用在服务器上|D．DDL触发器的触发事件包含CREATE、ALTER和DROP</td></tr>
+<tr><td nowrap>B</td><td nowrap>用于求系统日期的函数是（ ）。<br>A．YEAR（）|B．GETDATE（）|C．COUNT（）|D．SUM（）</td></tr>
+<tr><td nowrap>A</td><td nowrap>定义一个存储过程查询某学生某门课程的成绩和学分，存储过程的首部如下形式：\r\nCreate Procedure student_info @name char(8),@kc_name char(16) 则下列执行方式中，正确的是（ ）。<br>A. Execute student_info ‘李明’，’操作系统’|B. Exec student_info (’操作系统’,‘李明’)|C. Exec student_info 李明,操作系统|D. Execute student_info ’操作系统’,‘李明’</td></tr>
+<tr><td nowrap>B</td><td nowrap>进行数据库备份时，首先必须创建用来存储备份的备份设备，备份设备分为两类（ ）。<br>A．磁盘和磁带|B．永久备份设备和临时备份设备|C．磁盘和永久备份设备|D．磁带和临时备份设备</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于创建永久备份设备，下列说法错误的是（ ）。<br>A．执行系统存储过程sp_addumpdevice创建永久备份设备|B．执行系统存储过程sp_dropdevice删除永久备份设备|C．若被删除的“命名备份设备”的类型为磁盘，那么必须指定DELFILE选项|D．只须指定该命名备份设备的物理名，无须指定该命名备份设备的逻辑名</td></tr>
+<tr><td nowrap>A</td><td nowrap>SQL Server使用的图形界面管理工具是（ ）。<br>A．SQL Server Management Studio|B．SQL Server Configuration Manager|C．Analysis Services|D．Notification Services</td></tr>
+<tr><td nowrap>B</td><td nowrap>使用数据库实例的命令是（ ）。<br>A．REVOKE|B．USE|C．SELECT|D．GRANT</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于SQL Server语法规则，下面说法正确的是（ ）。<br>A．关键字必须为大写|B．一条语句结束后必须加“；”|C．语句的执行必须使用GO命令|D．每一个数据库对象都必须有一个唯一的完全限定名</td></tr>
+<tr><td nowrap>C</td><td nowrap>使用界面对表中数据进行增、删、改操作时，点击相应表右键的哪个选项（ ）。<br>A．编辑|B．设计|C．打开表|D．以上均错误</td></tr>
+<tr><td nowrap>B</td><td nowrap>1.用界面方式创建表时，多个属性组合作为主键的操作是（ ）。<br>A．点击相关的每一个属性，为其设置主键|B．按住Ctrl键，将相关属性选中再设置主键|C．按住Shift键，将相关属性选中再设置主键|D．按住Alt键，将相关属性选中再设置主键</td></tr>
+<tr><td nowrap>C</td><td nowrap>函数形参的数据类型可以是以下哪个选项（ ）。<br>A．Timestamp|B．用户自定义数据类型|C．Decimal|D．Cursor</td></tr>
+<tr><td nowrap>D</td><td nowrap>在SQL Server中所使用的文件分为三大类，其中不包括哪个选项（<br>A．辅助数据文件|B．日志文件|C．主数据文件|D．逻辑文件</td></tr>
+<tr><td nowrap>C</td><td nowrap>关于T-SQL语言，以下说法正确的是（ ）。<br>A．T-SQL语言能用于Oracle数据库|B．SQL Server数据库可以使用PL/SQL语言|C．T-SQL语言提供了流程控制功能|D．T-SQL语言并不提供标准的SQL命令</td></tr>
+<tr><td nowrap>A</td><td nowrap>以下哪个选项不属于SQL Server服务的状态（ ）。<br>A．关闭|B．启动|C．暂停|D．重新启动</td></tr>
+<tr><td nowrap>C</td><td nowrap>关于EXISTS谓词的使用，错误的是（ ）。<br>A．EXISTS谓词返回的结果为TRUE或FALSE|B．由EXISTS引出的子查询，select语句后一般不写具体的属性列，而使用*|C．EXISTS既可以用在相关子查询中，又可以用在不相关子查询中|D．NOT EXISTS与EXISTS返回的结果相反</td></tr>
+<tr><td nowrap>A</td><td nowrap>在查询表数据时，为列定义别名，以下选项正确的是（ ）。<br>A．select sno 学号 from student|B．select 学号=sno from student|C．select 学号 as sno from student|D．select sno=学号 from student</td></tr>
+<tr><td nowrap>C</td><td nowrap>下列说法错误的是（ ）。<br>A．内嵌表值函数没有函数主体，返回的表是单个SELECT语句的结果集|B．多语句表值函数的调用与内嵌表值函数的调用方法相同|C．多语句表值函数的功能可以用标量函数来实现|D．在内嵌表值函数的定义中，不使用BEGIN?END块定义函数主体</td></tr>
+<tr><td nowrap>C</td><td nowrap>表t1有10行数据，使用select语句查询@@cursor_rows的结果分别是\r\n（ ）。\r\nDeclare t_cur cursor for select * from t1\r\nSelect @@cursor_rows\r\nOpen t_cur\r\nSelect @@cursor_rows\r\nClose t_cur\r\nDeallocate t_cur<br>A．0和10|B．10和10|C．0和-1|D．-1和-1</td></tr>
+<tr><td nowrap>B</td><td nowrap>以下有关TRUNCATE TABLE命令说法正确的是（ ）。<br>A．TRUNCATE TABLE相当于DROP TABLE|B．TRUNCATE TABLE相当于无条件的DELETE FROM|C．TRUNCATE TABLE是删除表数据以及表结构|D．TRUNCATE TABLE可以有选择性的截断表中的数据</td></tr>
+<tr><td nowrap>C</td><td nowrap>关于AFTER触发器和INSTEAD OF触发器说法正确的是（ ）。<br>A．AFTER触发器和INSTEAD OF触发器既执行触发器内的语句又执行触发事件|B．AFTER触发器只执行触发器内的语句不执行触发事件|C．INSTEAD OF触发器只执行触发器内的语句不执行触发事件|D．AFTER触发器和INSTEAD OF触发器只执行触发器内的语句不执行触发事件</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于用户自定义函数，以下说法错误的是（ ）。<br>A．多语句表值函数可以看作是标量型和内嵌表值型函数的结合体|B．内嵌表值函数的返回值类型为表|C．表值函数在调用时可以只使用函数名|D．标量函数的返回值类型为表</td></tr>
+<tr><td nowrap>A</td><td nowrap>创建用户自定数据类型，使用哪个系统定义的存储过程（ ）。<br>A．sp_addtype|B．sp_type|C．type|D．addtype</td></tr>
+<tr><td nowrap>B</td><td nowrap>关于触发器的描述，下列说法正确的是（ ）。<br>A．触发器是在数据修改前被触发，约束是在数据修改后被触发|B．触发器是一个能自动执行的特殊的存储过程|C．触发器作为一个独立的对象存在，与数据库中其他对象无关|D．inserted表和deleted表是数据库中的物理表</td></tr>
+<tr><td nowrap>D</td><td nowrap>关于权限，说法错误的是（ ）。<br>A．被授权者将获得的权限授予其他用户，需要在执行授权语句时加with grant option|B．授予数据库级权限时，只能在master数据库中授权|C．授予权限时，ALL表示授予所有可用的对象权限|D．对public角色授权，相当于对数据库中所有用户授权</td></tr>
+<tr><td nowrap>A</td><td nowrap>SQL语言中，条件“年龄BETWEEN 40 AND 50”表示年龄在40至50之间，且(      )。<br>A.包括40岁和50岁|B.不包括40岁和50岁|C.包括40岁但不包括50岁|D.包括50岁但不包括40岁</td></tr>
+<tr><td nowrap>A</td><td nowrap>现有书目表book，包含字段：价格price (float)，类别type(char); 现在查询各个类别的平均价格、类别名称，以下语句正确的是（   ）<br>A．select avg(price),type from book group by type|B．select count(price),type from book group by price |C．select avg(price),type from book group by price|D．select count (price),type from book group by type</td></tr>
+<tr><td nowrap>D</td><td nowrap>从 &quot;产品 &quot;表里查询出价格高于产品名称为 &quot;石英表 &quot;价格的产品的记录，此SQL语句为（）。 <br>A.SELECT   *   FROM   产品WHERE   价格&gt; 石英表;|B.SELECT   *   FROM   产品WHERE 价格 &gt; (SELECT   *   FROM   产品WHERE   产品名称&gt; \'石英表 \');|C.SELECT   *   FROM   产品WHERE  EXISTS   产品名称= \'石英表 \');|D.SELECT   *   FROM   产品WHERE   价格 &gt; (SELECT   价格FROM   产品WHERE   产品名称= \'石英表 \'</td></tr>
+<tr><td nowrap>A</td><td nowrap>定义事务的一组语句是：<br>A. Begin Tran、Commit、RollBack|B. Begin、Continue、End|C. Create Tran、Commit、RollBack  |D. Begin Tran、Continue、End</td></tr>
+<tr><td nowrap>B</td><td nowrap>SQL Server触发器主要针对下列语句创建（    ）。<br>A. SELECT、INSERT、DELETE|B. INSERT、UPDATE、DELETE|C. SELECT、UPDATE、INSERT|D. INSERT、UPDATE、CREATE</td></tr>
+<tr><td nowrap>B</td><td nowrap>UNIQUE约束可以建立在“值可以为NULL”的列上。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>DISTINCT关键字允许重复数据集合的出现。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>WHERE语句和HAVING子句不能同时出现在一个查询操作中。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>视图既可以通过表得到，也可以通过其他视图得到。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>一个表中只能创建一个聚集索引。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>磁带设备可以通过网络来备份数据库。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>在SQL server中客户端应用程序与数据库服务器必须位于同一台计算机上。<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>使用SELECT进行查询时，WHERE子句不可缺少<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>差异备份比完全备份所耗费的时间要长<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>一个合法的登陆帐号就意味着这个登陆帐号可以对数据库对象进行某种操作<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>A</td><td nowrap>使用SQL语句删除一个角色时，必须先删除这个角色所包含的数据库用户<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>创建数据库时，主数据文件只能有一个<br>A.错误|B.正确</td></tr>
+<tr><td nowrap>B</td><td nowrap>存储过程可以接受参数，其中输入参数必须以“@”提示符开始<br>A.错误|B.正确</td></tr>
+</table>
+
+
+</body>
+
+
+
+
+</html>
