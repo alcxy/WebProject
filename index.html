@@ -14,6 +14,11 @@
 function onload() {
 	
 }
+	function clearinput() {
+		document.getElementById("keyword").value = "";
+		onkeyupup();
+	}
+		
 	function onkeyupup() {
 		var value = document.getElementById("keyword").value;
 		var elements = document.getElementsByTagName('tr');
@@ -39,7 +44,8 @@ function onload() {
 <body onload="onload();">
 <h3>検索</h3>
 <input type="text" id = "keyword" onchange="onkeyupup();"/>
-<input type="button" value="检索" onclientclick="onkeyupup();"/>
+<input type="button" style="width:100px" value="检索" onclick="onkeyupup();"/>
+<input type="button" style="width:100px" value="清除" onclick="clearinput();"/>
 <table>
 	<tr>
 		<th width="60px">结果</th>
