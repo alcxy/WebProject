@@ -27,8 +27,8 @@ function onload() {
 		value = value.toUpperCase();
 		
 		for (var i = 0; i < elements.length; i++) {
-			var trel = elements[i].children[0].innerHTML;
-			var trel2 = elements[i].children[1].innerHTML;
+			var trel = elements[i].children[0].innerHTML.toUpperCase();;
+			var trel2 = elements[i].children[1].innerHTML.toUpperCase();;
 			if (trel.indexOf(value) >= 0) {
 				elements[i].style.display = "block";
 			} 
